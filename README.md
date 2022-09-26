@@ -13,4 +13,4 @@ Frontend: Kalle, Iman, Aya, Abdulfatah, Kelly, Yendi, Nour
 
 # Trello
 
-https://trello.com/b/oH3mqojs/titel
+https://trello.com/invite/stemhemsida/181bd3da358f32c7684491fc3f785b57
