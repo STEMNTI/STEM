@@ -1,15 +1,15 @@
 # STEM
-Strukturindelning
+**Strukturindelning (التقسيم الهيكلي)**
 
-Ordförande: Fabian
+**Ordförande (رئيس):** Fabian
 
-Backend: Eidam, Ragnar, André, Milton, Markus
+**Backend:** Eidam, Ragnar, André, Milton, Markus
 
-Teknik: Rami, Alexandru, André, Eidam
+**Teknik:** Rami, Alexandru, André, Eidam
 
-Gränssnitt: Raluca, Alexandru, Jacob, Arvid, Bashar, Ammar, Bilen, Fabian
+**Gränssnitt(واجهه المستخدم):** Raluca, Alexandru, Jacob, Arvid, Bashar, Ammar, Bilen, Fabian
 
-Frontend: Kalle, Iman, Aya, Abdulfatah, Kelly, Yendi, Nour
+**Frontend:** Kalle, Iman, Aya, Abdulfatah, Kelly, Yendi, Nour
 
 # Trello
 
