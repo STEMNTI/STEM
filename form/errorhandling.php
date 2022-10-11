@@ -1,6 +1,6 @@
 <?php
-
-require_once 'conf/config.php';
+//Be careful when using require_once for files that return a value
+require_once 'config/config.php';
 
 
 $dsn = "mysql:host=$servername;dbname=$dbname;port=$port";
