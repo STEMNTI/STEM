@@ -1,4 +1,4 @@
-<?php>
+<?php
 
 require_once 'conf/config.php';
 
@@ -15,7 +15,7 @@ class Database {
         $this->password = $password;
         $this->dsn = $dsn;
         $this->userstable = $userstable;
-    
+    }
 
     function connect($dsn, $username, $password) {
         try {
@@ -25,12 +25,10 @@ class Database {
         } catch (PDOException $e) {
             $error = "Error: " . $e->getMessage();
             return $error;
-        }}
-
-        $this->conn = connect($this->dsn, $this->username, $this->password);
         }
+        $this->conn = connect($this->dsn, $this->username, $this->password);
+      }
 
-    public function dbconnect() {
-        return $this->conn;
-
-}}
+    public function dbconnect() { return $this->conn; }
+ }
+?>
