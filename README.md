@@ -3,13 +3,13 @@
 
 **Ordförande (رئيس):** Fabian
 
-**Backend:** Eidam, Ragnar, André, Milton, Markus
+**Backend:** Ragnar, André, Milton, Markus
 
 **Teknik:** Rami, Alexandru, André, Eidam
 
 **Gränssnitt(واجهه المستخدم):** Raluca, Alexandru, Jacob, Arvid, Bashar, Ammar, Bilen, Fabian
 
-**Frontend:** Kalle, Iman, Aya, Abdulfatah, Kelly, Yendi, Nour
+**Frontend:** Kalle, Iman, Aya, Abdulfatah, Kelly, Yendi, Nour, Eidam
 
 # Trello
 

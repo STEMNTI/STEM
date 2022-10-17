@@ -1,0 +1,51 @@
+ #logo{ /* Sidans logo */
+    width: 100px; /* size */
+    text-align: center; /*Text Placement */
+}
+#login_uppgifter{
+    margin:30px 0px 0px 0px;
+    text-align: center; /* text placement */
+}
+#div_logo{
+    text-align: center;
+}
+
+*{
+ box-sizing: border-box;   
+}
+header{  
+    background-color: #666;
+    padding: 30px; /* background size */
+    text-align: center; /* text placement */
+    font-size: 35px; /*text size*/
+    color: #fff; /* text color*/
+}
+nav{  /*navigation placement and style */ 
+    width: auto; /*size*/
+    height: 300px; /*size*/
+    background-color: #7544; /* background color*/
+    padding: 20px; /*space between nav and the elements */
+}
+article{ /*tag*/
+         /* placement of the article */
+    padding: 5px; /* size */
+    width: auto; /* size */
+    background-color: #fff; /* the color behind the article */
+    height: 19px; /* size */
+}
+section::after{
+    content: ""; 
+    display: table;
+    clear: both;
+}
+footer{
+    background-color: #754;
+    padding: 10px;
+    text-align: center;
+    color: #fff; 
+}
+@media(max-width:600px){}
+    nav,article{ /* navigation bar*/ 
+    width: 100%; /*size */
+    height: auto; /* The element will automaticly adjust its height*/
+}
