@@ -1,5 +1,4 @@
-<?php>
-
+<?php
 require_once 'conf/config.php';
 
 
@@ -34,3 +33,4 @@ class Database {
         return $this->conn;
 
 }}
+?>
