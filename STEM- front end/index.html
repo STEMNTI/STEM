@@ -1,47 +1,44 @@
-<!DOCTYPE html>
+</html><!DOCTYPE html>
 <html lang="sv"><!--The Page's language is in swedish-->
-<head>
-  <meta charset="UTF-8">
-  <!--The page will know that we can use all characters on the keyboard-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!--the name-->
-  <link rel="stylesheet" href="index.css">
-  <!--connecting to a css file-->
+<head> 
+    <meta charset="UTF-8"> <!--The page will know that we can use all characters on the keyboard-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!--the name-->
+    <link rel="stylesheet" href="index.css"> <!--connecting to a css file-->
+    
 </head>
+<body>      
+    <nav><ul class="nav-ul">
+        <li class="nav" id="home"><a href="">Home</a></li>
+        <li class="nav" id="ny"><a href="">News</a></li>
+        <li class="nav" id="kontakt"><a href="">Contact</a></li>
+        <li class="nav" id="om oss"><a href="">About</a></li>
+        <li class="nav"> <a id="bitch"><button id="login-button"onclick="ShowAndHide()" style="font-family: verdana; font-size: 16px;">Log in</button></a> </li>
+        </ul> </nav>
+        <article><p>textdsaojfioaw0esdjfiofjdsoaöhgiouasdhugio</p></article>
+           <!--login box-->
+            <div id="login-box">
+                <h2>Login</h2>
+                <form>
+                  <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                  </div>
+                  <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                  </a>
+                </form>
+              </div>
 
-<body>
-  <header> </header>
-
-  <section>
-    <nav>
-      <p>navigations</p>
-      <ul>
-        <li><a href="startsida.html">startsida</a></li>
-      </ul>
-    </nav>
-
-    <article>
-      <div id="div_logo">
-        <!--The logo-->
-        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Logo_BILD.svg" alt="logo">
-
-      </div>
-      <div id="login_uppgifter">
-        <input class="login_uppgifter" id="login_epost" type="email" alt="användare namn eller e-post" placeholder="e-post / användare namn">
-        <input class="login_uppgifter" id="login_password" type="password" alt="lösenord" placeholder="lösenord">
-        <input class="login_uppgifter" id="submit_login" type="submit" value="login">
-      </div>
-      <p>The article </p>
-    </article>
-  </section>
-  <footer>
-    <p>What to write here (footer)</p>
-  </footer>
-
-  <script src="js.js"></script>
-  <!--connecting to a java script file-->
+<script src="js.js"></script> <!--connecting to a java script file-->
 </body>
-
 </html>
