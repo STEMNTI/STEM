@@ -2,6 +2,7 @@
 
 // url = /form/login_req.php
 
-$_POST["username"];
-$_POST["password"];
+echo $_POST["username"];
+echo $_POST["password"];
 
+?>
