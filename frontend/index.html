@@ -10,10 +10,23 @@
 </head>
 <body>      
     <nav><ul class="nav-ul">
-        <li class="nav" id="home"><a href="">Home</a></li>
-        <li class="nav" id="ny"><a href="">News</a></li>
-        <li class="nav" id="kontakt"><a href="">Contact</a></li>
-        <li class="nav" id="om oss"><a href="">About</a></li>
+      <div class="navigation">
+        <button class="hamburger" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
+            <nav>
+                <ul>
+                  <br>
+                  <br>
+                    <li><a>Hem</a></li>
+                    <li><a>Om oss</a></li>
+                    <li><a>Projekt</a></li>
+                    <li><a onclick="ShowAndHide()">Logga in</a></li>
+                </ul>
+            </nav>
+      </div>
         <li class="nav"> <a id="bitch"><button id="login-button"onclick="ShowAndHide()" style="font-family: verdana; font-size: 16px;">Log in</button></a> </li>
         </ul> </nav>
         <article><p>textdsaojfioaw0esdjfiofjdsoaöhgiouasdhugio</p></article>
