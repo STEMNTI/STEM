@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> <!--the name-->
     <link rel="stylesheet" href="index.css"> <!--connecting to a css file-->
-    
+    <script src="js.js"></script>
 </head>
 <body>      
     <nav><ul class="nav-ul">
@@ -20,25 +20,48 @@
            <!--login box-->
             <div id="login-box">
                 <h2>Login</h2>
-                <form>
+                <form action="../form/login_form.php" method="post">
                   <div class="user-box">
-                    <input type="text" name="" required="">
-                    <label>Username</label>
+                    <label>Username</label><br><br>
+                    <input type="text" name="username">
                   </div>
                   <div class="user-box">
-                    <input type="password" name="" required="">
-                    <label>Password</label>
+                    <label>Password</label><br><br>
+                    <input type="password" name="password">
                   </div>
-                  <a href="#">
+                  <!-- <a href="htdocs_failed/STEM/form/login_form.php">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    Submit
-                  </a>
+                    login
+                  </a> -->
+                  <input type="submit" value="Login">
                 </form>
               </div>
 
-<script src="js.js"></script> <!--connecting to a java script file-->
+            <div id="register-box">
+                <h2>Register</h2>
+                <form action="../form/login_form.php" method="post">
+                  <div class="user-box">
+                    <input type="text" name="username">
+                    <label>Username</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="password" name="password">
+                    <label>Password</label>
+                  </div>
+                  <!-- <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Register
+                  </a> -->
+                  <input type="submit" value="Register">
+                </form>
+              </div>
+
+ <!--connecting to a java script file-->
 </body>
 </html>
