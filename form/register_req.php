@@ -6,3 +6,5 @@
 $_POST["email"];
 $_POST["username"];
 $_POST["password"];
+
+?>

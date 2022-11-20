@@ -4,9 +4,9 @@
     <meta charset="UTF-8"> <!--The page will know that we can use all characters on the keyboard-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!---->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <!--the name-->
-    <link rel="stylesheet" href="index.css"> <!--connecting to a css file-->
-    <script src="js.js"></script>
+    <title>NTI TE21</title> <!--the name-->
+    <link rel="stylesheet" href="main-style.css"> <!--connecting to a css file-->
+    <script src="main-script.js"></script>
 </head>
 <body>      
     <nav><ul class="nav-ul">
@@ -27,9 +27,9 @@
                 </ul>
             </nav>
       </div>
-        <li class="nav"> <a id="bitch"><button id="login-button"onclick="ShowAndHide()" style="font-family: verdana; font-size: 16px;">Log in</button></a> </li>
+        <li class="nav"> <a style="padding: 0px;"><button id="login-button" onclick="ShowAndHide()" style="font-family: verdana; font-size: 16px;">Register here!</button></a> </li>
         </ul> </nav>
-        <article><p>textdsaojfioaw0esdjfiofjdsoaöhgiouasdhugio</p></article>
+        <!-- <article><p>textdsaojfioaw0esdjfiofjdsoaöhgiouasdhugio</p></article> -->
            <!--login box-->
               <div id="login-box">
                 <h2>Login</h2>
@@ -42,39 +42,40 @@
                     <label>Password</label><br><br>
                     <input type="password" name="password">
                   </div>
-                  <!-- <a href="htdocs_failed/STEM/form/login_form.php">
+                  <a>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    login
-                  </a> -->
-                  <input type="submit" value="Login">
+                    <input style="background-color: transparent; border: transparent;" type="submit" value="Login">
+                  </a>
                 </form>
               </div>
 
               <div id="register-box">
                 <h2>Register</h2>
-                <form action="../form/login_form.php" method="post">
+                <form action="../form/register_req.php" method="post">
                   <div class="user-box">
+                    <label>E-mail</label><br>
+                    <input type="email" name="email">
+                  </div>
+                  <div class="user-box">
+                    <label>Username</label><br>
                     <input type="text" name="username">
-                    <label>Username</label>
                   </div>
                   <div class="user-box">
+                    <label>Password</label><br>
                     <input type="password" name="password">
-                    <label>Password</label>
                   </div>
-                  <!-- <a href="#">
+                    <a href="#">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    Register
-                  </a> -->
-                  <input type="submit" value="Register">
+                    <input style="background-color: transparent; border: transparent;" type="submit" value="Register">
+                  </a> 
                 </form>
+                <a style="padding: 0px;"><button style="background-color: transparent; border: transparent; font-size: 20px; color: #fff;" onclick="ShowAndHide()">Already have an account? Press me!</button></a>
               </div>
-
- <!--connecting to a java script file-->
 </body>
 </html>
