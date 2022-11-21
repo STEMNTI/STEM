@@ -7,6 +7,7 @@
     <title>NTI TE21</title> <!--the name-->
     <link rel="stylesheet" href="main-style.css"> <!--connecting to a css file-->
     <script src="main-script.js"></script>
+    <script src="https://kit.fontawesome.com/bb8970019a.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../frontend/images/STEM_logo_1440x1080.png" type="x-image/icon"> 
 </head>
 <body>      
@@ -21,14 +22,31 @@
                 <ul>
                   <br>
                   <br>
-                    <li><a>Hem</a></li>
+                    <li><a href="">Hem</a></li>
                     <li><a>Om oss</a></li>
-                    <li><a>Projekt</a></li>
+                    <li class="dropdown"><a class="dropbtn" onclick="show1()">Projekt </a><div id="dropdown1" class="dropdown-content">
+                        <br>
+                        <a href="">Matte</a>
+                        <br>
+                        <br>
+                        <a href="">Fyisk</a>
+                        <br>
+                        <br>
+                        <a href="">Robotik</a>
+                        <br>
+                        <br>
+                        <a href="">Teknik</a>
+                        <br>
+                        <br>
+                        <a href="">Programmering</a>
+                    </div></li>
                     <li><a onclick="ShowAndHide()">Logga in</a></li>
                 </ul>
             </nav>
       </div>
-        <li class="nav"> <a style="padding: 0px;"><button id="login-button" onclick="ShowAndHide()" style="font-family: verdana; font-size: 16px;">Register here!</button></a> </li>
+        <!-- <li class="nav"> <a id="bitch"><button id="login-button"onclick="ShowAndHide()" style="font-family: verdana; font-size: 16px;">Log in</button></a> </li> -->
+        <img id="alexmästerverk" src="https://trello.com/1/cards/634d409efe71bc00b5cec8df/attachments/634d409efe71bc00b5cec8fc/download/IMG_0020.PNG" alt="">
+        <!-- <li class="nav"> <a style="padding: 0px;"><button id="login-button" onclick="ShowAndHide()" style="font-family: verdana; font-size: 16px;">Register here!</button></a> </li> -->
         </ul> </nav>
         <!-- <article><p>textdsaojfioaw0esdjfiofjdsoaöhgiouasdhugio</p></article> -->
            <!--login box-->
@@ -78,5 +96,31 @@
                 </form>
                 <a style="padding: 0px;"><button style="background-color: transparent; border: transparent; font-size: 20px; color: #fff;" onclick="ShowAndHide()">Already have an account? Press me!</button></a>
               </div>
+
+            <footer>
+              <div class="col 1">
+                <h3> Services</h3>
+                <p> Webdesign</p>
+                <p> Development</p>
+                <p> Hosting</p>
+              </div>
+              
+              <div class="col 2">
+                <h3> About</h3>
+                <p>Company</p>
+                <p>Students</p>
+                <p> Careers</p>
+              </div>
+               
+                <div class="col 3">
+                  <h3> Company Name</h3>
+                  <p> NTI Gymnasie</p>
+                </div>
+
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-snapchat"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </footer>
 </body>
 </html>
