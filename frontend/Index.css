@@ -1,9 +1,13 @@
 * {
-    user-select: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   body {
       margin: 0;
+      overflow: visible;
       background-image: url(https://imageproxy.wolt.com/venue/5f71e1c33df30902271f730e/f94991d2-a907-11ec-8073-3a8f709e161f_d_ner_uni_pizza_close_up_1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -19,6 +23,7 @@
   .nav{
       float: left;
   }
+
   .nav a {
       display: block;
       color: white;
@@ -26,6 +31,7 @@
       padding: 14px 16px;
       text-decoration: none;
     }
+
   .nav a:hover {
       background-color: #111;
   }
@@ -215,12 +221,7 @@
         bottom: 100%;
       }
     }
-*{
-      margin: 0;
-      padding: 0;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    
+
     a,button{
       cursor: pointer;
     }
@@ -336,3 +337,48 @@
       height: 50px;
       transform: translateY(5%);
     }
+
+  footer{
+      margin-top: 150px;
+      width:100%;
+      font-family: sans serif;
+      background: #777;
+      color: #fff;
+      display: flex;
+      box-sizing: border box;
+      position: sticky;
+      bottom: 0;
+      transform: translateY(155%);
+  }
+  
+  footer div{
+      text-align: center;
+      margin: 100px;
+  }
+
+  .col-2{
+      flex-grow: 2;
+  }
+  
+  footer div h3{
+      font-weight: 300;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+  }
+
+  .col p{
+      display: block;
+      text-decoration: none;
+      color:#fff;
+      margin-bottom: 10px;
+  }
+
+  /* .fa-brands {
+    transform: translate(-2000%,75%);
+    background-color: black;
+    font-size: 25px;
+  } */
+  
+  .fa-brands fa-facebook{
+      position: static;
+  }
