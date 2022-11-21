@@ -316,7 +316,7 @@
       transition: max-height 0.8s;
     }
     .dropdown-content.show {
-      max-height: 35%;
+      max-height: 35vw;
     }
     .dropdown-content a {
       color: #a0f;
