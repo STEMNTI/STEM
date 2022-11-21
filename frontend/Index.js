@@ -1,20 +1,20 @@
 let visLog = 0;
 window.addEventListener("load", function() {
     login_box = document.getElementById('login-box');
-    register_box = document.getElementById('register-box');
-    /* login_register_button = document.getElementById('login-button'); */
+   /*  register_box = document.getElementById('register-box');
+    login_register_button = document.getElementById('login-button'); */
 });
 
 function ShowAndHide() {
     if (visLog % 2 == 1) {
         login_box.style.display = 'initial';
-        register_box.style.display = 'none';
-        /* login_register_button.innerHTML = "Register here!"; */
+        /*register_box.style.display = 'none';
+         login_register_button.innerHTML = "Register here!"; */
         visLog--;
     } else {
         login_box.style.display = 'none';
-        register_box.style.display = 'block';
-        /* login_register_button.innerHTML = "Login here!"; */
+        /*register_box.style.display = 'block';
+         login_register_button.innerHTML = "Login here!"; */
         visLog++;
     }
 };  

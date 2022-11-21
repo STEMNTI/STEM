@@ -122,7 +122,8 @@
       display: inline-block;
       cursor: pointer;
       padding: 10px 20px;
-      color: #f00;
+      color: #fff;
+      font-weight: 10px;
       font-size: 16px;
       text-decoration: none;
       text-transform: uppercase;
