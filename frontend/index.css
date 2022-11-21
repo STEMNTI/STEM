@@ -35,7 +35,6 @@
       padding: 0;
       overflow: hidden;
       background-color: #333;
-  
   }
   .nav-ul {
       position: fixed;
@@ -232,7 +231,6 @@
       right: 50px;
       width: 100vw;
     }
-    
     .navigation{
       position: fixed;
       right: -500px;
@@ -240,6 +238,7 @@
       height: 100%;
       background-color: #000;
       transition: .5s;
+      text-decoration: none;
     }
     
     .navigation ul li{
@@ -255,11 +254,10 @@
     .hamburger, .bar{
       position: fixed;
     }
-    
     .hamburger{
       display: block;
       top: 4.3%;
-      left: 95%;
+      left: 96.5%;
       width: 30px;
       height: 30px;
       transform: translateY(-50%);
@@ -299,4 +297,43 @@
     .hamburger.open #bar3{
       background-color: #fff;
       transform: rotate(-45deg) translate(6px, -5px);
+    }
+    a:hover{
+      text-decoration: none;
+      color: #fff!important;
+    }
+    .dropdown {
+      position: relative;
+      display: block;      
+    }
+    .dropdown-content {
+      max-height: 0px;
+      overflow: hidden;
+      background-color: #000;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      transition: max-height 0.8s;
+    }
+    .dropdown-content.show {
+      max-height: 35%;
+    }
+    .dropdown-content a {
+      color: #a0f;
+      padding: 12px 16px;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover {
+      color: #fff;
+    }
+    a{
+      text-decoration: none!important;
+      color: #a0f;
+    }
+    #alexmästerverk{
+      display: inline-block;
+      padding: 0;
+      width: 50px;
+      height: 50px;
+      transform: translateY(5%);
     }

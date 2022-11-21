@@ -17,4 +17,7 @@ window.addEventListener("load", function() {
 function show(){
     document.querySelector('.hamburger').classList.toggle('open')
     document.querySelector('.navigation').classList.toggle('active')
+};
+function show1(){
+    document.getElementById('dropdown1').classList.toggle('show');
 }
