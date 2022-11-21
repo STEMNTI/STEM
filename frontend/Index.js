@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
     /* login_register_button = document.getElementById('login-button'); */
 });
 
- function ShowAndHide() {
+function ShowAndHide() {
     if (visLog % 2 == 1) {
         login_box.style.display = 'initial';
         register_box.style.display = 'none';
@@ -23,6 +23,7 @@ function show(){
     document.querySelector('.hamburger').classList.toggle('open')
     document.querySelector('.navigation').classList.toggle('active')
 };
+
 function show1(){
     document.getElementById('dropdown1').classList.toggle('show');
 }
