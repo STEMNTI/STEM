@@ -3,8 +3,9 @@
 
 
 // url  = /form/register_req.php
-$_POST["email"];
-$_POST["username"];
-$_POST["password"];
+$EMAIL = $_POST["email"];
+$USERNAME = $_POST["username"];
+$PASSWORD = $_POST["password"];
 
-?>
+
+$query = "INSERT INTO `users` (`ID`, `email`, `username`, `password`) VALUES (NULL, '$EMAIL', '$USERNAME', '$PASSWORD');";
