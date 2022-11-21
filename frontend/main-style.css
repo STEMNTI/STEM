@@ -50,11 +50,8 @@
     text-decoration: none;
     padding: 14px 16px;
     right: 0;
-  
   }
-  #bitch{
-    padding: 0px;
-  }
+
   /*login-box*/
   #login-box, #register-box {
       position: absolute;
@@ -113,9 +110,11 @@
       font-size: 12px;
     }
     
-    #login-box form a, #register-box form a {
+    #login-box form a, #register-box form a,
+    #login-box form a input[type=submit], #register-box form a input[type=submit] {
       position: relative;
       display: inline-block;
+      cursor: pointer;
       padding: 10px 20px;
       color: #f00;
       font-size: 16px;
@@ -123,7 +122,7 @@
       text-transform: uppercase;
       overflow: hidden;
       transition: .5s;
-      margin-top: 40px;
+      margin-top: 2.5px;
       letter-spacing: 4px
     }
     
