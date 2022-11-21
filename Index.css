@@ -23,6 +23,7 @@
   .nav{
       float: left;
   }
+
   .nav a {
       display: block;
       color: white;
@@ -30,6 +31,7 @@
       padding: 14px 16px;
       text-decoration: none;
     }
+
   .nav a:hover {
       background-color: #111;
   }
@@ -314,7 +316,7 @@
       transition: max-height 0.8s;
     }
     .dropdown-content.show {
-      max-height: 35%;
+      max-height: 35vw;
     }
     .dropdown-content a {
       color: #a0f;
