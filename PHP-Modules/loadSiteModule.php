@@ -55,7 +55,7 @@ class Site {
                 $string = '<script src="' . $basedir . $file .  '">' . "</script>";
                 // Adds the selected Javascript file
                 print_r($string);
-                echo "yes";
+                
                 echo "\n";
 
             }
