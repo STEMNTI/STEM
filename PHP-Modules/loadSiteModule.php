@@ -6,7 +6,7 @@ class Site {
 
     // declare variable types
     private string $site;
-   
+
     private string $HTMLPath;
     private string $CSSPath;
     private string $cssFile;
@@ -49,18 +49,19 @@ class Site {
             ');
 
             // Selects all Javascript-Scripts that contains index in its name.
-            foreach (glob($_SERVER["DOCUMENT_ROOT"]."/Javascript-Scripts/" . $this->site . "-*.js") as $file) {
+            foreach (glob($_SERVER["DOCUMENT_ROOT"]."/Javascript-Scripts/Script-" . $this->site . ".js") as $file) {
                 $file = "/Javascript-Scripts/".basename($file);
                 if($file == '.' || $file == '..') continue;
                 $string = '<script src="' . $basedir . $file .  '">' . "</script>";
                 // Adds the selected Javascript file
                 print_r($string);
+                echo "yes";
                 echo "\n";
 
             }
             // Adds css File :: TODO: BEING ABLE TO USE MULTIPLE CSS FILES
             //print_r("<link rel='stylesheet' href=" . $basedir . "/" . $this->CSSPath . "Style-" . "navbar" . ".css" . ">");
-            print_r("<link rel='stylesheet' href=" . $basedir . "/" . $this->CSSPath . "Style-" . $this->cssFile . ".css" . ">");
+            print_r("<link rel='stylesheet' href='" . $basedir . "/" . $this->CSSPath . "Style-" . $this->cssFile . ".css'" . ">");
             echo "\n\n";
 
             // Gets html-file from defined path
