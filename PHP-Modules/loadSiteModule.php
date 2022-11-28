@@ -6,7 +6,7 @@ class Site {
 
     // declare variable types
     private string $site;
-    private bool $access;
+   
     private string $HTMLPath;
     private string $CSSPath;
     private string $cssFile;
@@ -38,15 +38,7 @@ class Site {
         $basedir = join("/", array_slice($basedir, 0, count($basedir)-2));
 
 
-        // Checks if file exists; If it doesn't throw error
-        if(!file_exists($_SERVER["DOCUMENT_ROOT"] . "/" . $this->HTMLPath . $this->site . ".html")) {
-            throw new Exception($this->HTMLPath . $this->site);
-        } else {
-            // Prints out all Javascript Modules
-            foreach($this->JSmodules as $value) {
-                print_r($value);
 
-            }
 
             // TODO: ADD SUPPORT FOR UNNAMED TYPESCRIPT FILES. - DONE
 
@@ -67,7 +59,7 @@ class Site {
 
             }
             // Adds css File :: TODO: BEING ABLE TO USE MULTIPLE CSS FILES
-            print_r("<link rel='stylesheet' href=" . $basedir . "/" . $this->CSSPath . "Style-" . "navbar" . ".css" . ">");
+            //print_r("<link rel='stylesheet' href=" . $basedir . "/" . $this->CSSPath . "Style-" . "navbar" . ".css" . ">");
             print_r("<link rel='stylesheet' href=" . $basedir . "/" . $this->CSSPath . "Style-" . $this->cssFile . ".css" . ">");
             echo "\n\n";
 
@@ -85,19 +77,14 @@ class Site {
 
             require $_SERVER["DOCUMENT_ROOT"] . "/" . $this->HTMLPath . $this->site . ".html";
 
-            // Logs current file as specific text file
-            output($_SERVER["DOCUMENT_ROOT"] . "/logs/" . $this->site . "-logs.txt");
+
+
         }
 
 
 
-    }
 
-    // prints path to file for testing
-    function printSitePath (): void
-    {
-        print_r($this->HTMLPath . $this->site);
-    }
+
 
 
 }
