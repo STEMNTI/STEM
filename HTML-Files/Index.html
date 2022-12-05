@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NTI TE21</title> <!--the name-->
   <script src="https://kit.fontawesome.com/bb8970019a.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="/HTML-Files/images/STEM_logo_1440x1080.png" type="x-image/icon">
+  <link rel="icon" href="STEM_logo_1440x1080.png" type="x-image/icon">
+  <link rel="stylesheet" href="../CSS-Files/Style-index.css">
+
 </head>
 <body>      
   <nav>
@@ -49,7 +51,7 @@
       </div>
       <!-- <li class="nav"> <a id="bitch"><button id="login-button"onclick="ShowAndHide()" style="font-family: verdana; font-size: 16px;">Log in</button></a> </li> -->
 
-      <img id="alexmästerverk" src="/HTML-Files/images/STEM_logo.png" alt="STEM logo">
+      <img id="alexmästerverk" src="/HTML-Files/images/STEM_logo_1440x1080.png" alt="STEM logo">
 
       <!-- <li class="nav"> <a style="padding: 0px;"><button id="login-button" onclick="ShowAndHide()" style="font-family: verdana; font-size: 16px;">Register here!</button></a> </li> -->
 
@@ -61,18 +63,22 @@
   <div id="login-box">
     <h2>Login</h2>
     <form action="../PHP-Modules/login_form.php" method="post">
-
       <div class="user-box">
-        <label>Username</label><br><br>
-        <input type="text" name="username">
+        <input type="text" name="" required="">
+        <label>E-mail</label>
       </div>
-
       <div class="user-box">
-        <label>Password</label><br><br>
-        <input type="password" name="password">
+        <input type="password" name="" required="">
+        <label>Password</label>
       </div>
-
-      <a>
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button style="background-color: transparent; border: transparent;" onclick="">Registera</button>
+      </a>
+      <a href="#">
         <span></span>
         <span></span>
         <span></span>
@@ -137,5 +143,6 @@
       <!--  <i class="fa-brands fa-snapchat"></i> -->
       <i class="fa-brands fa-instagram"></i>
   </footer>
+  <script src="/Javascript-Scripts/Script-index.js"></script>
 </body>
 </html>
