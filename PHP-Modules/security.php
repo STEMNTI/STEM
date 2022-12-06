@@ -70,7 +70,7 @@ function _aes_256_gen_iv() {
   }
   
 function lazylog($msg,$tag){ echo "<$tag>$msg</$tag><br>";}
-$msg = "Hello NTI, this is quick example of Ramcdcis Encryption";
+$msg = "Hello NTI, This is a quick example of Rami's Dark Art encryption function; be advised.";
 $enc = _AES256_Encrypt_CBC($msg);
 $dec = _AES256_Decrypt_CBC($enc);
 
