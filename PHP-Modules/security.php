@@ -1,10 +1,12 @@
 <?php
+
 const AES_256_KEYLEN = 32;
 const AES_256_IV_LEN = 16;
 const XOR_MASTER_KEY = "vQa5JIjBlagq2e39wtHo7gQQ1HOEjJEQ";
 const AES_256_MODE   = "AES-256-CBC";
+
 // Generate Random IV, which is used in the OpenSSL aes 256 algorithm.
-function _aes_256_gen_iv() {
+function CryptGenIV() {
     $characters = "0123456789";
     $result = "";
     for ($i = 0; $i < AES_256_IV_LEN; $i++) {
@@ -15,7 +17,7 @@ function _aes_256_gen_iv() {
 
 // Generate a random sequence of characters to be used as
 // the key in the OpenSSL aes 256 algorithm.
-function _aes_256_gen_key() {
+function CryptGenAESkey() {
     $characters =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ".
         "abcdefghijklmnopqrstuvwxyz".
@@ -31,19 +33,20 @@ function _aes_256_gen_key() {
 
 // can be used to both decrypt and encrypt data
 // using basic xor encryption and decryption.
-function Ramis_DarkArt_XorCrypt($plainData) {
+function DarkartXorCrypt($plainData) {
     $cipherbuf = ""; //This will contain the ciphered text.
     // Now we go through the plain data and xor each letter one by one.
 
     for ($i = 0; $i < strlen($plainData); $i++) {
-        $cipherbuf.= $plainData[$i] ^ XOR_MASTER_KEY[$i % strlen(XOR_MASTER_KEY)];
+        $cipherbuf .= 
+        $plainData[$i] ^ XOR_MASTER_KEY[$i % strlen(XOR_MASTER_KEY)];
     }
     return $cipherbuf; // Return the cipher text
 }
 
 function AES256_Encrypt_CBC($plaintext) {
-    $AES_KEY = _aes_256_gen_key(); //Generate Key
-    $AES_IV = _aes_256_gen_iv(); //Generate IV
+    $AES_KEY = CryptGenAESkey(); //Generate Key
+    $AES_IV  = CryptGenIV(); //Generate IV
 
     // Encrypt the data, and store the ciphered text in Cipher_buf
     $cipherData = openssl_encrypt(
@@ -54,26 +57,16 @@ function AES256_Encrypt_CBC($plaintext) {
         $AES_IV // the IV (recomended to always be different/random)
     );
     // Return new String looking like(xorred iv + xorred key + ciphertext)
-    return 
-    Ramis_DarkArt_XorCrypt($AES_IV). // xorred IV
-    Ramis_DarkArt_XorCrypt($AES_KEY). //xorred key
-    $cipherData; //encrypted plain text
+    return DarkartXorCrypt($AES_IV).DarkartXorCrypt($AES_KEY).$cipherData; //encrypted plain text
 }
 // The IV is the first 16 characters
 // The following 32 characters are the key
 // The rest is the encrypted message.
 function AES256_Decrypt_CBC($ciphertext) {
-    // The IV is the first 16 characters
-    $plainIV  = Ramis_DarkArt_XorCrypt(substr($ciphertext, 0, 16));
-    
-    // The following 32 characters are the key
-    $plainKEY = Ramis_DarkArt_XorCrypt(substr($ciphertext, 16, 48));
+    $plainIV  = DarkartXorCrypt(substr($ciphertext, 0, 16));    // The IV is the first 16 characters
+    $plainKEY = DarkartXorCrypt(substr($ciphertext, 16, 48));    // The following 32 characters are the key
+    $cipherText_len = strlen($ciphertext) - 48;//The length of only the ciphered text, excluding key length and iv
 
-
-    //The length of only the ciphered text, excluding key length and iv
-    $cipherText_len = strlen($ciphertext) - 48;
-    
-  
     $plainText = openssl_decrypt(
          substr($ciphertext, 48, $cipherText_len),
          AES_256_MODE,
