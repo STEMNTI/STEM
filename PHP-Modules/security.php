@@ -7,12 +7,9 @@ const AES_256_MODE   = "AES-256-CBC";
 
 // Generate Random IV, which is used in the OpenSSL aes 256 algorithm.
 function CryptGenIV() {
-    $characters = "0123456789";
-    $result = "";
-    for ($i = 0; $i < AES_256_IV_LEN; $i++) {
-        $result .= $characters[rand(0, strlen($characters) - 1)];
-    }
-    return $result;
+    // Generate a random byte sequence with length specified by the AES_256_IV_LEN constant
+    $iv = random_bytes(AES_256_IV_LEN);
+    return $iv;
 }
 
 // Generate a random sequence of characters to be used as
