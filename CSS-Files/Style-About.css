@@ -9,26 +9,16 @@
   body {
       margin: 0;
       overflow: visible;
-      /* background-image: url(https://imageproxy.wolt.com/venue/5f71e1c33df30902271f730e/f94991d2-a907-11ec-8073-3a8f709e161f_d_ner_uni_pizza_close_up_1.jpg);
+     /*  background-image: url(https://imageproxy.wolt.com/venue/5f71e1c33df30902271f730e/f94991d2-a907-11ec-8073-3a8f709e161f_d_ner_uni_pizza_close_up_1.jpg);
       background-repeat: no-repeat;
       background-size: cover; */
       font-family: verdana;
-      overflow-x: hidden;
   }
   article{
     position: absolute;
     transform: translate(280%, 1000%);
     border:solid 5px #000;
     display: inline-block;
-  }
-  
-  #page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;
   }
   
   .nav{
@@ -354,111 +344,53 @@
         height: 110px;
         transform: translateY(5%);
       }
+    footer{
+        margin-top: 120px;
+        width:100%;
+        font-family: sans serif;
+        background: #777;
+        color: #fff;
+        display: flex;
+        box-sizing: border box;
+        position: sticky;
+        bottom: 0;
+        transform: translateY(275%);
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: center;
+        align-items: stretch;
+  
+    }
     
-      #projects {
-        border: none; 
-      }
-  
-  #article-container {
-    transform: translate(-230%, -1925%);
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: space-around;
-    align-items: flex-start;
-  
-  }
-  
-  #article-container2 {
-    transform: translate(-170%, -1900%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  
-  .imgCode {
-    border: none;
-    height: 250px;
-    width: 270px;
-  }
-  
-  .imgRice {
-    border: none;
-    height: 250px;
-    width: 270px;
-  }
-  
-  #article-container p {
-    transform: translateX(120%);
-    width: 200px;
-    height: 20px;
-  }
-  
-  #article-container2 p {
-    transform: translateX(-120%);
-    width: 200px;
-    height: 50px;
-  }
-  
-  
-  /* #article-container:first-child img {
-    height: 100rem;
-    width: 100rem;
-  }
-  
-  #article-container:last-child img {
-    height: 200rem;
-    width: 200rem;
-  } */
-  
-  footer{
-    width:100%;
-    bottom: 0;
-    position: absolute;
-    margin-top: 120px;
-    font-family: sans serif;
-    background: #777;
-    color: #fff;
-    display: flex;
-    box-sizing: border box;
-    transform: translateY(275%);
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: center;
-    align-items: stretch;
-  
-  }
-  
   footer div{
-  text-align: center;
-  margin: 100px;
+      text-align: center;
+      margin: 100px;
   }
   
   footer div h3{
-  font-size: 40px;
-  font-weight: 300;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
   }
   
   .col p{
-  font-size: 20px;
-  display: block;
-  text-decoration: none;
-  color:#fff;
-  margin-bottom: 10px;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    margin-bottom: 10px;
   }
   
   /* .fa-brands {
-  transform: translate(-2000%,75%);
-  background-color: black;
-  font-size: 25px;
+    transform: translate(-2000%,75%);
+    background-color: black;
+    font-size: 25px;
   } */
   
   .fa-brands {
-  font-size: 30px;
-  letter-spacing: 10px;
-  bottom: 0;
+    font-size: 30px;
+    letter-spacing: 10px;
+    bottom: 0;
   }

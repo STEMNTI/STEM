@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTI TE21 - Matte</title>
+<html lang="sv"><!--The Page's language is in swedish-->
+<head> 
+  <meta charset="UTF-8"> <!--The page will know that we can use all characters on the keyboard-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!---->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTI TE21 - Matematik</title> <!--the name-->
+  <link rel="stylesheet" href="../CSS-Files/Style-Mathematics.css">
+  <script src="https://kit.fontawesome.com/bb8970019a.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="../HTML-Files/images/STEM_logo_1440x1080.png" type="x-image/icon">
+  <script src="../Javascript-Scripts/Script-Coding.js"></script>
 </head>
-<body>
-    <h1>Matte</h1>
+<body>    
+    
+    <div id="page-container">
+        <footer>
+            <div class="col 1">
+                  <h3> Services</h3>
+                  <p> Webdesign</p>
+                  <p> Development</p>
+                  <p> Hosting</p>
+                </div>
+                
+                <div class="col 2">
+                  <h3> About</h3>
+                  <p> Company</p>
+                  <p> Students</p>
+                  <p> Careers</p>
+                </div>
+                  
+                  <div class="col 3">
+                    <h3> Company Name</h3>
+                    <p> NTI Gymnasiet</p>
+                  </div>
+            
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <!--  <i class="fa-brands fa-snapchat"></i> -->
+                  <i class="fa-brands fa-instagram"></i>
+              </footer>
+        <div id="content-wrap">
+
+            <article id="projects">
+                <div id="article-container">
+                    <img class="imgCode" src="./images/codecode.webp" alt="Random Code">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda hic modi quidem atque doloribus minima voluptas nulla sed similique perferendis numquam ratione corporis dolorem exercitationem, velit eum sit, in tempore!</p>
+                </div>
+                <div id="article-container2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quisquam eos ducimus expedita sit repellendus facere illum harum, quia officia inventore mollitia ipsum vel excepturi quaerat a? Quia, ipsa quo.</p>
+                    <img class="imgRice" src="./images/koka-ris_6935.avif" alt="Random Rice">
+                </div>
+              </article>
+
+            <nav>
+                <ul class="nav-ul">
+                  <div class="navigation">
+                    <button class="hamburger" onclick="show()">
+                      <div id="bar1" class="bar"></div>
+                      <div id="bar2" class="bar"></div>
+                      <div id="bar3" class="bar"></div>
+                    </button>
+                      <nav>
+                        <ul>
+                          <br>
+                          <br>
+                          <li><a href="">Hem</a></li>
+                          <li><a href="./About.html">Om oss</a></li>
+                          <li class="dropdown">
+                            <a class="dropbtn" onclick="show1()">Projekt</a>
+                            <div id="dropdown1" class="dropdown-content">
+                              <br>
+                                <a href="Mathematics">Matte</a>
+                              <br>
+                              <br>
+                                <a href="Physics">Fysik</a>
+                              <br>
+                              <br>
+                                <a href="Robotics">Robotik</a>
+                              <br>
+                              <br>
+                                <a href="Technology">Teknik</a>
+                              <br>
+                              <br>
+                                <a href="Coding">Programmering</a>
+                            </div>
+                          </li>
+            
+                          <li><a onclick="ShowAndHide()">Logga in</a></li>
+                        </ul>
+                      </nav>
+                  </div>
+                  <img id="alexmästerverk" src="../HTML-Files/images/STEM_logo.png" alt="STEM logo">
+                </ul>
+              </nav>
+            
+              <div id="login-box">
+                <h2>Login</h2>
+                <form action="../PHP-Modules/login_form.php" method="post">
+            
+                  <div class="user-box">
+                    <label>Username</label><br><br>
+                    <input type="text" name="username">
+                  </div>
+            
+                  <div class="user-box">
+                    <label>Password</label><br><br>
+                    <input type="password" name="password">
+                  </div>
+            
+                  <a>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input style="background-color: transparent; border: transparent;" type="submit" value="Login">
+                  </a>
+                </form>
+              </div>
+
+              
+
+        </div>
+    </div>
+  
 </body>
 </html>
