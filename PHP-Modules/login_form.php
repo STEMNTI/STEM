@@ -1,4 +1,5 @@
  <?php
+ // this is vulnerable to SQL injection attacks
  session_start();
  require "./Database.php";
 
