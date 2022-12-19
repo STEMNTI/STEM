@@ -1,63 +1,52 @@
 * {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+body {
+    margin: 0;
+    overflow: visible;
+    background-image: url(https://imageproxy.wolt.com/venue/5f71e1c33df30902271f730e/f94991d2-a907-11ec-8073-3a8f709e161f_d_ner_uni_pizza_close_up_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: verdana;
+}
+article{
+  position: absolute;
+  transform: translate(280%, 1000%);
+  border:solid 5px #000;
+  display: inline-block;
+}
+
+.nav{
+    float: left;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.nav a:hover {
+    background-color: #111;
+}
+.nav-ul{
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    user-select: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    }
-    
-  body {
-      margin: 0;
-      overflow: visible;
-      /* background-image: url(https://imageproxy.wolt.com/venue/5f71e1c33df30902271f730e/f94991d2-a907-11ec-8073-3a8f709e161f_d_ner_uni_pizza_close_up_1.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
-      font-family: verdana;
-      overflow-x: hidden;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.875);
+}
+.nav-ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
-  article{
-    position: absolute;
-    transform: translate(280%, 1000%);
-    border:solid 5px #000;
-    display: inline-block;
-  }
-
-  #page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-
-  #content-wrap {
-    padding-bottom: 2.5rem;
-  }
-  
-  .nav{
-      float: left;
-  }
-  
-  .nav a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-  
-  .nav a:hover {
-      background-color: #111;
-  }
-  .nav-ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-  }
-  .nav-ul {
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
   #login-button{
     background: none;
     border: none;
