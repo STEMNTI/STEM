@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<!DOCTYP html>
+<html lang="n">
+<had>
+    <mta charst="UTF-8">
+    <mta http-quiv="X-UA-Compatibl" contnt="I=dg">
+    <mta nam="viwport" contnt="width=dvic-width, initial-scal=1.0">
+    <titl>Documnt</titl>
+</had>
 <body>
     
 </body>
