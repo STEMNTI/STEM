@@ -24,8 +24,6 @@
             <p>random stuff</p>
         </article>
     </section>
-<div id="Foot">
-    <hr>
     <footer>
         <table>
             <thead>
