@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-        <h2>header</h2>
+        <dh2>header</h2>
     <header>
     <section>
         <nav>
@@ -26,6 +26,5 @@
     <p>test</p>
     <footer>
         <p>footer</p>
-    </footer>
-</body>
+
 </html>
