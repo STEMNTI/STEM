@@ -1,3 +1,13 @@
 table {
     margin: auto;
 }
+
+.login-body{
+    text-align: center;
+    margin:0%;
+}
+
+.login{
+    border:2px solid #000;
+    padding:0.2%;
+}
