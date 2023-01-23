@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StemKlubben</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
         <h2>header</h2>
-    <header>
+</header>
     <section>
         <nav>
             <ul>
@@ -23,9 +24,25 @@
             <p>random stuff</p>
         </article>
     </section>
-    <p>test</p>
     <footer>
-        <p>footer</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Services</th>
+                    <br>
+                    <th>About</th> 
+                    <th>Company Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web design</td>
+                    <td>Company</td>
+                    <td>NTI STEMKLUBBEN</td>
+                </tr>
+            </tbody>
+        </table>
     </footer>
+</div>
 </body>
 </html>
