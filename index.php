@@ -7,6 +7,24 @@
     <title>Titel</title>
 </head>
 <body>
-    
+<header>
+        <h2>header</h2>
+    <header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">random link 1</a></li>
+                <li><a href="">random link 2</a></li>
+                <li><a href="">random link 3</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>article</h1>
+            <p>random stuff</p>
+        </article>
+    </section>
+    <footer>
+        <p>footer</p>
+    </footer>
 </body>
 </html>
