@@ -24,11 +24,10 @@
             <p>random stuff</p>
         </article>
     </section>
-    <hr>
     <footer>
         <table>
             <thead>
-                <tr>
+                <tr class="table-row">
                     <th>Services</th>
                     <br>
                     <th>About</th> 
@@ -36,10 +35,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Web design</td>
-                    <td>Company</td>
-                    <td>NTI STEMKLUBBEN</td>
+                <tr class="table-row">
+                    <td id="td1">Web design</td>
+                    <td id="td2">Company</td>
+                    <td id="td3">NTI STEMKLUBBEN</td>
                 </tr>
             </tbody>
         </table>
