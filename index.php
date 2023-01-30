@@ -24,6 +24,7 @@
             <p>random stuff</p>
         </article>
     </section>
+    <hr>
     <footer>
         <table>
             <thead>
@@ -43,6 +44,5 @@
             </tbody>
         </table>
     </footer>
-</div>
 </body>
 </html>
