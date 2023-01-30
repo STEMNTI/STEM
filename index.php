@@ -11,7 +11,7 @@
 <body>
 <header>
         <h2>header</h2>
-</header>
+</header> 
     <section>
         <nav>
             <ul>
@@ -28,22 +28,21 @@
     <footer>
         <table>
             <thead>
-                <tr>
-                    <th>Services</th>
+                <tr class="table-row">
+                    <th id="th1">Services</th>
                     <br>
-                    <th>About</th> 
-                    <th>Company Name</th>
+                    <th id="th2">About</th> 
+                    <th id="th3">Company Name</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Web design</td>
-                    <td>Company</td>
-                    <td>NTI STEMKLUBBEN</td>
+                <tr class="table-row">
+                    <td id="td1">Web design</td>
+                    <td id="td2">Company</td>
+                    <td id="td3">NTI STEMKLUBBEN</td>
                 </tr>
             </tbody>
         </table>
     </footer>
-</div>
 </body>
 </html>
