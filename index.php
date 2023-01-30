@@ -10,7 +10,7 @@
 <body>
 <header>
         <h2>header</h2>
-</header>
+</header> 
     <section>
         <nav>
             <ul>
