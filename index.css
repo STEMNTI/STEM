@@ -1,0 +1,9 @@
+body{
+    font-family: Verdana, sans-serif;
+}
+header{
+    background-color: #777;
+    text-align: center;
+    color: #fff;
+    padding: 1.5vw;
+}
