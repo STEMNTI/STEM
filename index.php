@@ -7,10 +7,16 @@
     <title>StemKlubben</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hamburger.css">
 </head>
 <body>
 <header>
         <h2>header</h2>
+        <div class="hamburg-menu">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
 </header>
     <section>
         <nav>
