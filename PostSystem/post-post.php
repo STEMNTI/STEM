@@ -1,7 +1,10 @@
 <?php
+session_name("");
+session_start();
+require("sql.php");
 
 //POSTS IN ORDER.
-$posts = array_reverse($posts = mysql("SELECT * FROM `post`", [
+$posts = array_reverse($posts = sql("SELECT * FROM `post`", [
 ]));
 
 //FOR EACH POST, PRINT VALUES (CAN POST INTO DIV FOR STYLING).
