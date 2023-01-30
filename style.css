@@ -1,7 +1,17 @@
-table {
-    margin: auto;
+footer {
+    background-color: #1e3f5a;
 }
-
+table {
+    margin-left: 10%;
+    font-size: 110%;
+    width: 40%;
+}
+td {
+    color: #D3D3D3;
+}
+th {
+    color: #fff;
+}
 .login-body{
     text-align: center;
     margin:0%;
