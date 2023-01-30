@@ -29,10 +29,10 @@
         <table>
             <thead>
                 <tr class="table-row">
-                    <th>Services</th>
+                    <th id="th1">Services</th>
                     <br>
-                    <th>About</th> 
-                    <th>Company Name</th>
+                    <th id="th2">About</th> 
+                    <th id="th3">Company Name</th>
                 </tr>
             </thead>
             <tbody>
