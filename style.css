@@ -2,9 +2,10 @@ footer {
     background-color: #1e3f5a;
 }
 table {
-    margin-left: 10%;
+    margin-left: 15%;
     font-size: 110%;
-    width: 40%;
+    width: 60%;
+    text-align: left;
 }
 td {
     color: #D3D3D3;
