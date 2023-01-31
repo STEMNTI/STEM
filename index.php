@@ -27,18 +27,35 @@
     <footer>
         <table>
             <thead>
-                <tr class="table-row">
-                    <th id="th1">Services</th>
+                <tr>
+                    <th id="th1">Projekt</th>
                     <br>
-                    <th id="th2">About</th> 
-                    <th id="th3">Company Name</th>
+                    <th id="th2">Sidor</th> 
+                    <th id="th3">NTI Gymnasiet</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="table-row">
-                    <td id="td1">Web design</td>
-                    <td id="td2">Company</td>
-                    <td id="td3">NTI STEMKLUBBEN</td>
+                <tr>
+                    <td>Matte</td>
+                    <td>NTI Hemsida</td>
+                    <td>Vi är en skola för dig som vill vara en del av IT-utvecklingen!</td>
+                </tr>
+                <tr>
+                    <td>Fysik</td>
+                    <td>Om oss</td>
+                    <td>Om du vill gå en populär gymnasieutbildning inom tech och IT</td>
+                </tr>
+                <tr>
+                    <td>Robotik</td>
+                    <td>Teknik Programmet</td>
+                    <td>är NTI Gymnasiet Kristianstad det självklara valet.</td>
+                </tr>
+                <tr>
+                    <td>Teknik</td>
+                    <td>El & Energi Programmet</td>
+                </tr>
+                <tr>
+                    <td>Programmering</td>
                 </tr>
             </tbody>
         </table>

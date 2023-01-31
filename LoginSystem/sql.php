@@ -7,7 +7,7 @@ function sql($sql, $vals = []){//utför påståendet
     foreach($vals as $k => $v) {
         $q->bindParam($k, $vals[$k]);
     }
-    $q-> execute();// utföra satsen 
+    $q->execute();// utföra satsen 
     return $q->fetchAll(PDO::FETCH_ASSOC);///hämta alla rader i resultatuppsättningen
 }
 ?>
