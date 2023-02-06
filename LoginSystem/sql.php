@@ -40,7 +40,7 @@ function SignIntoUser($username, $password) {
 
 function sql($sql, $vals=[]){
     // Create a PDO instance
-    $pdo = new PDO("mysql:host=localhost;dbname=STEM-login;charset=utf8;", "root", "");//ansluta till databasen
+    $pdo = new PDO("mysql:host=localhost;dbname=STEM-login;", "root", "");//ansluta till databasen
     // Prepare the SQL query
     $q = $pdo->prepare($sql);
     
