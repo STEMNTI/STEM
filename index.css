@@ -2,8 +2,11 @@ body{
     font-family: Verdana, sans-serif;
 }
 header{
-    background-color: #777;
+    background-color: #1e3f5a;
     text-align: center;
     color: #fff;
     padding: 1.5vw;
+}
+#header {
+    font-size: 2vw;
 }
