@@ -7,10 +7,17 @@
     <title>StemKlubben</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hamburger.css">
 </head>
 <body>
 <header>
-        <h2>header</h2>
+        <h2 id ="header">STEM-NTI</h2>
+        <div class="hamburg-menu">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+</header>
 </header> 
     <section>
         <nav>
@@ -26,6 +33,10 @@
         </article>
     </section>
     <footer>
+<<<<<<< HEAD
+        <p>footer</p>
+
+=======
         <table>
             <thead>
                 <tr>
@@ -60,6 +71,13 @@
                 </tr>
             </tbody>
         </table>
+        <div id="icons">
+        <a href="https://www.facebook.com/ntikristianstad/"><img src="Bilder/Facebook Stem.png" alt="Facebook Icon" id="Facebook"></a>
+        <a href="https://www.ntigymnasiet.se/kristianstad/"><img src="Bilder/Hemsida Stem.png" alt="Hemsida Icon" id="Hemsida"></a>
+        <a href="https://www.instagram.com/ntikristianstad/"><img src="Bilder/instagram stem.jpg" alt="Instagram Icon" id="Instagram"></a>
+        </div>  
+        <p id="copyright">Stem Klubben © 2022</p>
     </footer>
 </body>
+>>>>>>> 03fea43fd4a4f14f66c8f52547c8b552caa40755
 </html>
