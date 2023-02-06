@@ -2,9 +2,9 @@ footer {
     background-color: #1e3f5a;
 }
 table {
-    margin-left: 15%;
-    font-size: 110%;
-    width: 60%;
+    margin-left: 20%;
+    font-size: 100%;
+    width: 70%;
     text-align: left;
 }
 td {
@@ -12,6 +12,19 @@ td {
 }
 th {
     color: #fff;
+}
+#icons {
+    margin-left:46%;
+    margin-top:2%;
+}
+#Facebook, #Instagram, #Hemsida {
+    width:50px;
+}
+#copyright {
+    color:#808080;
+    padding-bottom:1%;
+    text-align: center;
+    padding-bottom: 2.5%;
 }
 .login-body{
     text-align: center;

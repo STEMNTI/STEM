@@ -60,6 +60,12 @@
                 </tr>
             </tbody>
         </table>
+        <div id="icons">
+        <img src="Bilder/Facebook Stem.png" alt="Facebook Icon" id="Facebook">
+        <img src="Bilder/Hemsida Stem.png" alt="Hemsida Icon" id="Hemsida">
+        <img src="Bilder/instagram stem.jpg" alt="Instagram Icon" id="Instagram">
+        </div>  
+        <p id="copyright">Stem Klubben © 2022</p>
     </footer>
 </body>
 </html>
