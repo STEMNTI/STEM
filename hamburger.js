@@ -1,3 +1,6 @@
+/*
+ visLog är non-descriptive förkortning. 
+ Den är också undefined, är det en glob så det kmmr alltid att bli false
 function ShowAndHide() {
     if (visLog % 2 == 1) {
         login_box.style.display = 'none';
@@ -8,4 +11,5 @@ function ShowAndHide() {
         register_box.style.display = 'none';
         visLog++;
     }
-};  
+};   
+*/
