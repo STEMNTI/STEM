@@ -1,0 +1,17 @@
+.hamburg-menu{
+    margin-top: -4%;
+}
+.bar{
+    margin-top: 0.5%;
+    background: #fff;
+    width: 3%;
+    height: 0.5vw;
+    transition: all .3s ease-in;
+  }
+  #bar2 {
+    top: 10px;
+  }
+  
+  #bar3 {
+    top: 100px;
+  }
