@@ -1,0 +1,25 @@
+!23/1-23
+todo: 
+      1. local databas - klar
+      
+      2. form - klar
+        2.1 koppla form med login - klar
+        2.2 requirements - maintenence
+
+      3. login - klar
+        3.1 SELECT * FROM databas - klar
+        3.2 "facecheck" - klar
+        3.3 redirect till homepage - klar
+        
+      4. logout - klar
+        4.1 logout - klar
+
+!30/1-23
+todo: 
+      1. brainstorma om hur "admin" sidan för testing ska se ut. - klar
+          (ny tabell i databasen som är satt för admin som har user,pass, adminhash för administratorer att logga in på. brainstorma om hur vi ska göra med form om vi ska ha en ny eller återanvända den vi redan har.)
+        1.1 använda databasen för att testa om ideer för admin login - klar
+      
+      2. skapa flitig admin login - klar
+        2.1 SELECT admin FROM databas (?) - klar
+        2.2 testa admin - maintenence

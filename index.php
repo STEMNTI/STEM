@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StemKlubben</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hamburger.css">
 </head>
 <body>
 <header>
-<<<<<<< HEAD
-        <dh2>header</h2>
-    <header>
-=======
-        <h2>header</h2>
+        <h2 id ="header">STEM-NTI</h2>
+        <div class="hamburg-menu">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
 </header>
->>>>>>> 03fea43fd4a4f14f66c8f52547c8b552caa40755
+</header> 
     <section>
         <nav>
             <ul>
@@ -37,22 +40,44 @@
         <table>
             <thead>
                 <tr>
-                    <th>Services</th>
+                    <th id="th1">Projekt</th>
                     <br>
-                    <th>About</th> 
-                    <th>Company Name</th>
+                    <th id="th2">Sidor</th> 
+                    <th id="th3">NTI Gymnasiet</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Web design</td>
-                    <td>Company</td>
-                    <td>NTI STEMKLUBBEN</td>
+                    <td>Matte</td>
+                    <td>NTI Hemsida</td>
+                    <td>Vi är en skola för dig som vill vara en del av IT-utvecklingen!</td>
+                </tr>
+                <tr>
+                    <td>Fysik</td>
+                    <td>Om oss</td>
+                    <td>Om du vill gå en populär gymnasieutbildning inom tech och IT</td>
+                </tr>
+                <tr>
+                    <td>Robotik</td>
+                    <td>Teknik Programmet</td>
+                    <td>är NTI Gymnasiet Kristianstad det självklara valet.</td>
+                </tr>
+                <tr>
+                    <td>Teknik</td>
+                    <td>El & Energi Programmet</td>
+                </tr>
+                <tr>
+                    <td>Programmering</td>
                 </tr>
             </tbody>
         </table>
+        <div id="icons">
+        <a href="https://www.facebook.com/ntikristianstad/"><img src="Bilder/Facebook Stem.png" alt="Facebook Icon" id="Facebook"></a>
+        <a href="https://www.ntigymnasiet.se/kristianstad/"><img src="Bilder/Hemsida Stem.png" alt="Hemsida Icon" id="Hemsida"></a>
+        <a href="https://www.instagram.com/ntikristianstad/"><img src="Bilder/instagram stem.jpg" alt="Instagram Icon" id="Instagram"></a>
+        </div>  
+        <p id="copyright">Stem Klubben © 2022</p>
     </footer>
-</div>
 </body>
 >>>>>>> 03fea43fd4a4f14f66c8f52547c8b552caa40755
 </html>
