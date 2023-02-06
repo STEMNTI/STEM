@@ -8,21 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="hamburger.css">
+    
 </head>
 <body>
 <header>
         <h2>header</h2>
-<<<<<<< HEAD
-        <div class="hamburg-menu">
-            <div class="bar" id="bar1"></div>
-            <div class="bar" id="bar2"></div>
-            <div class="bar" id="bar3"></div>
-        </div>
+        
 </header>
-=======
-</header> 
->>>>>>> ede28ef028141069df7f5bf82b585cac71dc38af
-    <section>
+<div class="navigation">
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
         <nav>
             <ul>
                 <li><a href="">random link 1</a></li>
@@ -30,6 +28,9 @@
                 <li><a href="">random link 3</a></li>
             </ul>
         </nav>
+        </div>
+    <section>
+        
         <article>
             <h1>article</h1>
             <p>random stuff</p>
@@ -71,11 +72,12 @@
             </tbody>
         </table>
         <div id="icons">
-        <img src="Bilder/Facebook Stem.png" alt="Facebook Icon" id="Facebook">
-        <img src="Bilder/Hemsida Stem.png" alt="Hemsida Icon" id="Hemsida">
-        <img src="Bilder/instagram stem.jpg" alt="Instagram Icon" id="Instagram">
+        <a href="https://www.facebook.com/ntikristianstad/"><img src="Bilder/Facebook Stem.png" alt="Facebook Icon" id="Facebook"></a>
+        <a href="https://www.ntigymnasiet.se/kristianstad/"><img src="Bilder/Hemsida Stem.png" alt="Hemsida Icon" id="Hemsida"></a>
+        <a href="https://www.instagram.com/ntikristianstad/"><img src="Bilder/instagram stem.jpg" alt="Instagram Icon" id="Instagram"></a>
         </div>  
         <p id="copyright">Stem Klubben © 2022</p>
     </footer>
+    <script src="hamburger.js"></script>
 </body>
 </html>
