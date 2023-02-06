@@ -37,6 +37,10 @@
         </article>
     </section>
     <footer>
+<<<<<<< HEAD
+        <p>footer</p>
+
+=======
         <table>
             <thead>
                 <tr>
@@ -80,4 +84,5 @@
     </footer>
     <script src="hamburger.js"></script>
 </body>
+>>>>>>> 03fea43fd4a4f14f66c8f52547c8b552caa40755
 </html>
