@@ -34,7 +34,7 @@ if (isset($_POST["username"])) { //kollar om username har skickats
                 ":name" => AES256_Encrypt_CBC($username)
             ]);
             if(isset($userType[0]["user_type"]) == "admin") {
-                header("Location: admin/admin.php?Test");
+                header("Location: admin/admin.php");
             }  else if(isset($userType[0]["user_type"]) == null) {
                 header("Location: homepage.php");
             } else {

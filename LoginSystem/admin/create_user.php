@@ -7,12 +7,11 @@
     <title>Create user - Admin</title>
 </head>
 <body>
-    <form action="register.php">
+    <form action="../register.php" method="post">
         <input type="text" name="username" placeholder="username"><br><br>
         <input type="password" name="password" placeholder="password"><br><br>
         <label for="isadmin">Set To Admin</label>
-        <input type="radio" name="isadmin" idplaceholder="admin"><br><br>
-
+        <input type="radio" name="isadmin" placeholder="admin"><br><br>
         <input type="submit" value="Submit">
     </form>
 </body>
