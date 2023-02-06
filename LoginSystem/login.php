@@ -11,12 +11,8 @@ if (isset($_POST["username"])) { //kollar om username har skickats
    /*  $result = SignIntoUser("SELECT username, password FROM users WHERE username = :name AND password = :pass", [
         ":name" => AES256_Encrypt_CBC($username),
         ":pass" => AES256_Encrypt_CBC($password),
-    ]); */
-    
+    ]); */    
     $result = SignIntoUser(AES256_Encrypt_CBC($username), AES256_Encrypt_CBC($password));
-    
-
-
     // if a matching row was found in users table (encrypted)
     if (isset($result[0]["username"]) && isset($result[0]["password"])) {
         // decrypt encrypted name and pass values from database
