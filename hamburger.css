@@ -50,7 +50,7 @@ nav{
 
 .bar{
   top: 3px;
-  background: #000;
+  background: #fff;
   width: 100%;
   height: 4px;
   transition: all .3s ease-in;

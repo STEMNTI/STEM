@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-        <h2>header</h2>
+        <h2>STEM-NTI</h2>
         
 </header>
 <div class="navigation">

@@ -1,9 +1,9 @@
 #header {
-    padding-bottom: 1%;
+    padding-bottom: 1%;     
+    font-size: 2vw;     
 }
 footer {
     background-color: #1e3f5a;
-    margin:-10px;
 }
 table {
     margin-left: 20%;
@@ -39,8 +39,4 @@ header{
     text-align: center;
     color: #fff;
     padding: 1.5vw;
-    margin:-10px;
-}
-#header {
-    font-size: 2vw;
 }
