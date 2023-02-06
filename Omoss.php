@@ -28,7 +28,7 @@
 
     <br>
 
-    <img src="klassfototemplate.png" alt="Klassfoto">
+    <img src="Bilder/klassfototemplate.png" alt="Klassfoto">
     <br>
     <img src="" alt="">
 
