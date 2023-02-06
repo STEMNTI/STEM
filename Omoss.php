@@ -12,9 +12,20 @@
             padding-left: 80px;
             padding-top: 20px
         }
-        img{
-            text-align: center;
+        div.klassfoto img {
             width: 100%;
+            height: auto;
+        }
+        div.klassfoto:hover {
+            border: 2px ridge #777;
+            border-radius: 3px;
+            padding: 0.5px;
+            padding-top: 1px;
+        }
+        div.desc {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     </style>
 
@@ -28,14 +39,12 @@
 
     <br>
 
-    <img src="klassfototemplate.png" alt="Klassfoto">
-    <br>
-    <img src="" alt="">
+    <div class="klassfoto"> <img src="Bilder/klassfototemplate.png" alt="Klassfoto">       <!-- Bild på klassen -->
+    <div class="desc">Namn?</div>       <!-- Bildbeskrivning -->
+    </div>
 
     <footer>
         
     </footer>
-
-
 </body>
 </html>
