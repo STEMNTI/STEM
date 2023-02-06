@@ -1,18 +1,20 @@
 <?php
-function CreateUser($username, $password) {
+function CreateUser($username, $password, $usertype = "") {
   // Connect to a MySQL database
     $pdo = new PDO("mysql:host=localhost;dbname=STEM-login;", "root", "");//ansluta till databasen
 
   // Sanitize inputs to prevent SQL injection
   $user = htmlspecialchars($username);
   $pass = htmlspecialchars($password);
+  $userType = $usertype;
 
   // Prepare SQL statement
-  $prepared = $pdo->prepare("INSERT INTO users (username, password) VALUES (:name, :pass)");
+  $prepared = $pdo->prepare("INSERT INTO users (username, password, user_type) VALUES (:name, :pass, :user_type)");
 
   // Bind values to parameters in statement
   $prepared->bindValue(":name", $user, PDO::PARAM_STR);
   $prepared->bindValue(":pass", $pass, PDO::PARAM_STR);
+  $prepared->bindValue(":user_type", $userType, PDO::PARAM_STR);
 
   // Execute statement
   $prepared->execute();
