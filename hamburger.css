@@ -19,7 +19,7 @@ nav{
   right: -500px;
   width: 350px;
   height: 100%;
-  background-color: #000;
+  background-color: #1e3f5a;
   transition: .5s;
 }
 
@@ -35,6 +35,11 @@ nav{
 
 .hamburger, .bar{
   position: fixed;
+}
+
+#ham {
+  text-decoration: none;
+  color: #fff;
 }
 
 .hamburger{
