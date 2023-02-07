@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="hamburger.css">
-    
 </head>
 <body>
 <header>
