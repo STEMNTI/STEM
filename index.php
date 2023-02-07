@@ -48,7 +48,7 @@
             <tbody>
                 <tr>
                     <td>Matte</td>
-                    <td>NTI Hemsida</td>
+                    <td><a id="links" href="https://www.ntigymnasiet.se/kristianstad/">NTI Hemsida</a></td>
                     <td>Vi är en skola för dig som vill vara en del av IT-utvecklingen!</td>
                 </tr>
                 <tr>
@@ -58,12 +58,12 @@
                 </tr>
                 <tr>
                     <td>Robotik</td>
-                    <td>Teknik Programmet</td>
+                    <td><a id="links" href="https://www.ntigymnasiet.se/program/informations-och-medieteknik/kristianstad/">Teknik Programmet</a></td>
                     <td>är NTI Gymnasiet Kristianstad det självklara valet.</td>
                 </tr>
                 <tr>
                     <td>Teknik</td>
-                    <td>El & Energi Programmet</td>
+                    <td><a id="links" href="https://www.ntigymnasiet.se/program/dator-och-kommunikationsteknik/kristianstad/" >El & Energi Programmet</a></td>
                 </tr>
                 <tr>
                     <td>Programmering</td>
