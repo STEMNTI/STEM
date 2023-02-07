@@ -5,6 +5,11 @@ require("security.php");
     ":user" => AES256_Encrypt_CBC($_POST["email"]),
     ":pass" => AES256_Encrypt_CBC($_POST["password"])
 ]); */
-$data = CreateUser(AES256_Encrypt_CBC($_POST["email"]), AES256_Encrypt_CBC($_POST["password"]));
+
+$data = CreateUser(
+    AES256_Encrypt_CBC($_POST["email"]), 
+    AES256_Encrypt_CBC($_POST["password"]),
+    isset($_POST["isadmin"]) ? "admin":""
+);
 
 header("Location: index.php");
