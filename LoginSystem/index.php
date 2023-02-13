@@ -8,9 +8,12 @@
 </head>
 <body>
     <form action="login.php" method="post"><!--action anger vilken fil som skall ta imot information och method är vad som ska hända med informationen-->
-        <input type="text" name="username" placeholder="Användarnamn"><!--skriv in användarnamn-->
-        <input type="password" name="password" placeholder="Lösenord"><!--skriv in lösenord-->
-        <input type="submit" value="submit"><!--skickar informationen om användarnamn och lösenord-->
+        <label for="">Login</label><br><br>
+        <input type="text" name="username" placeholder="Användarnamn"><br><br><!--skriv in användarnamn-->
+        <input type="password" name="password" placeholder="Lösenord"><br><br><!--skriv in lösenord-->
+        <input type="submit" name="submit" value="submit"><br><br><!--skickar informationen om användarnamn och lösenord-->
     </form>
+    <a href="register_form.php">Register here!</a><br><br>
+    <!-- <a href="admin.php">Admin</a> -->
 </body>
 </html>

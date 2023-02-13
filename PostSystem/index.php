@@ -13,11 +13,13 @@ session_start();
 </head>
 <body>
 <div>
-    <form action="post-create.php" method="post"> 
+    <form action="post-create.php" method="post" enctype="multipart/form-data"> 
         <input type="text" name="tpost" id="tpost" placeholder="Titel"><br>
         <textarea type="text" name="post" id="post" placeholder="Skriv inlägg"></textarea><br>
+        <input type="file" name= "image" id= "image" placeholder= "Upload image"></input><br>    
         <input type="submit" value="Skapa">
     </form>
 </div>
+<a href="post-post.php">Posts</a>
 </body>
 </html>

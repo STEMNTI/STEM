@@ -1,9 +1,55 @@
+#header {
+    padding-bottom: 1%;     
+    font-size: 2vw; 
+      
+}
+#logga {
+    float:left;
+    width: 50px;
+}
+footer {
+    background-color: #0b3252;
+}
+table {
+    margin-left: 20%;
+    margin-top: 1%;
+    font-size: 100%;
+    width: 70%;
+    text-align: left;
+}
+td {
+    color: #D3D3D3;
+}
+#links {
+    text-decoration: none;
+    color: #D3D3D3;
+}
+th {
+    color: #fff;
+}
+#icons {
+    margin-left:46%;
+    margin-top:2%;
+}
+#Facebook, #Instagram, #Hemsida {
+    width:50px;
+}
+#copyright {
+    color:#808080;
+    padding-bottom:1%;
+    text-align: center;
+    padding-bottom: 2.5%;
+}
 body{
     font-family: Verdana, sans-serif;
+    overflow: hidden;
 }
 header{
-    background-color: #777;
+    background-color: #0b3252;
     text-align: center;
     color: #fff;
     padding: 1.5vw;
+}
+article{
+    height: 25vw;
 }
