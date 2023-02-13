@@ -3,10 +3,6 @@ session_name("create");
 session_start();
 require("post-sql.php");
 
-//POSTS IN ORDER.
-$posts = array_reverse($posts = sql("SELECT * FROM posts", [
-]));
-
 //IF THE VALUE ISNT PICKED YET IT SHOWS ALL POSTS
 if(empty($_POST["filtervalue"])) { 
     $posts = array_reverse($posts = sql("SELECT * FROM posts", [
