@@ -11,8 +11,8 @@
 </head>
 <body>
 <header>
-        <h2>STEM-NTI</h2>
-        
+        <img src="Bilder/SnyggLogga.png" alt="Snygglogga" style="">
+        <h2>STEM-NTI</h>
 </header>
 <div class="navigation">
             <button class="hamburger" onclick="show()">
