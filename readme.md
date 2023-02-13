@@ -18,3 +18,8 @@ Vi har fixat github hos alla och vi har alla valt en upgift vi ska arbeta på oc
 
 
 v.5
+
+
+
+v.6
+
