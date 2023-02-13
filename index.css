@@ -1,6 +1,6 @@
 #header {
     padding-bottom: 1%;     
-    font-size: 2vw;     
+    font-size: 2vw;   
 }
 footer {
     background-color: #1e3f5a;
@@ -37,10 +37,14 @@ th {
 }
 body{
     font-family: Verdana, sans-serif;
+    overflow: hidden;
 }
 header{
     background-color: #1e3f5a;
     text-align: center;
     color: #fff;
     padding: 1.5vw;
+}
+article{
+    height: 11vw;
 }
