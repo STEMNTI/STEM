@@ -9,6 +9,7 @@
 }
 footer {
     background-color: #0b3252;
+    min-height: 100vh;
 }
 table {
     margin-left: 20%;
@@ -32,7 +33,7 @@ th {
     margin-top:2%;
 }
 #Facebook, #Instagram, #Hemsida {
-    width:50px;
+    width:5%;
 }
 #copyright {
     color:#808080;
