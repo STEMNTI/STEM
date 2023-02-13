@@ -11,22 +11,25 @@
 </head>
 <body>
 <header>
-        <h2 id ="header">STEM-NTI</h2>
-        <div class="hamburg-menu">
-            <div class="bar" id="bar1"></div>
-            <div class="bar" id="bar2"></div>
-            <div class="bar" id="bar3"></div>
-        </div>
+        <h2>STEM-NTI</h2>
+        
 </header>
-</header> 
-    <section>
+<div class="navigation">
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
         <nav>
             <ul>
-                <li><a href="">random link 1</a></li>
-                <li><a href="">random link 2</a></li>
-                <li><a href="">random link 3</a></li>
+                <li><a href="" id="ham">random link 1</a></li>
+                <li><a href="" id="ham">random link 2</a></li>
+                <li><a href="" id="ham">random link 3</a></li>
             </ul>
         </nav>
+        </div>
+    <section>
+        
         <article>
             <h1>article</h1>
             <p>random stuff</p>
@@ -45,7 +48,7 @@
             <tbody>
                 <tr>
                     <td>Matte</td>
-                    <td>NTI Hemsida</td>
+                    <td><a id="links" href="https://www.ntigymnasiet.se/kristianstad/">NTI Hemsida</a></td>
                     <td>Vi är en skola för dig som vill vara en del av IT-utvecklingen!</td>
                 </tr>
                 <tr>
@@ -55,12 +58,12 @@
                 </tr>
                 <tr>
                     <td>Robotik</td>
-                    <td>Teknik Programmet</td>
+                    <td><a id="links" href="https://www.ntigymnasiet.se/program/informations-och-medieteknik/kristianstad/">Teknik Programmet</a></td>
                     <td>är NTI Gymnasiet Kristianstad det självklara valet.</td>
                 </tr>
                 <tr>
                     <td>Teknik</td>
-                    <td>El & Energi Programmet</td>
+                    <td><a id="links" href="https://www.ntigymnasiet.se/program/dator-och-kommunikationsteknik/kristianstad/" >El & Energi Programmet</a></td>
                 </tr>
                 <tr>
                     <td>Programmering</td>
@@ -74,5 +77,6 @@
         </div>  
         <p id="copyright">Stem Klubben © 2022</p>
     </footer>
+    <script src="hamburger.js"></script>
 </body>
 </html>

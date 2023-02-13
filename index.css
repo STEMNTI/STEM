@@ -1,3 +1,40 @@
+#header {
+    padding-bottom: 1%;     
+    font-size: 2vw;     
+}
+footer {
+    background-color: #1e3f5a;
+}
+table {
+    margin-left: 20%;
+    margin-top: 1%;
+    font-size: 100%;
+    width: 70%;
+    text-align: left;
+}
+td {
+    color: #D3D3D3;
+}
+#links {
+    text-decoration: none;
+    color: #D3D3D3;
+}
+th {
+    color: #fff;
+}
+#icons {
+    margin-left:46%;
+    margin-top:2%;
+}
+#Facebook, #Instagram, #Hemsida {
+    width:50px;
+}
+#copyright {
+    color:#808080;
+    padding-bottom:1%;
+    text-align: center;
+    padding-bottom: 2.5%;
+}
 body{
     font-family: Verdana, sans-serif;
 }
@@ -6,7 +43,4 @@ header{
     text-align: center;
     color: #fff;
     padding: 1.5vw;
-}
-#header {
-    font-size: 2vw;
 }
