@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="slideshow.css">
 </head>
 <body>
 <header>
@@ -29,10 +30,24 @@
         </nav>
         </div>
     <section>
-        
-        <article>
-            <h1>article</h1>
-            <p>random stuff</p>
+        <article>           
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+            <img src="https://img.koket.se/standard-mega/kebab-i-pitabrod-med-tva-saser-inlagd-chili-och-krispig-sallad.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+            <img src="https://receptfavoriter.se/sites/default/files/styles/recipe_4x3/public/hemgjort_kebabkott_pa_fat_1060.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+            <img src="https://www.bellybalance.se/wp-content/uploads/2017/05/Vegetarisk-Shish-kebab-med-quinoasallad.jpg" style="width:100%">
+            </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
         </article>
     </section>
     <footer>
@@ -78,5 +93,6 @@
         <p id="copyright">Stem Klubben © 2022</p>
     </footer>
     <script src="hamburger.js"></script>
+    <script src="slideshow.js"></script>
 </body>
 </html>

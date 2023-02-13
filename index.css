@@ -1,13 +1,14 @@
 #header {
     padding-bottom: 1%;     
-    font-size: 2vw;   
+    font-size: 2vw; 
+      
 }
 #logga {
     float:left;
     width: 50px;
 }
 footer {
-    background-color: #1e3f5a;
+    background-color: #0b3252;
 }
 table {
     margin-left: 20%;
@@ -44,11 +45,11 @@ body{
     overflow: hidden;
 }
 header{
-    background-color: #1e3f5a;
+    background-color: #0b3252;
     text-align: center;
     color: #fff;
     padding: 1.5vw;
 }
 article{
-    height: 11vw;
+    height: 25vw;
 }
