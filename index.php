@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-        <img src="Bilder/SnyggLogga.png" alt="Snygglogga" width="50" height="50">
+        <img src="Bilder/SnyggLogga.png" alt="Snygglogga" id="logga">
         <h2>STEM-NTI</h>
 </header>
 <div class="navigation">
