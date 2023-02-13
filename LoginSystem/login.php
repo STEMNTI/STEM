@@ -18,21 +18,20 @@ if (isset($_POST["username"])) { //kollar om username har skickats
         // decrypt encrypted name and pass values from database
         $rawName = AES256_Decrypt_CBC($result[0]["username"]);
         $rawPass = AES256_Decrypt_CBC($result[0]["password"]);
+        $username = AES256_Decrypt_CBC($username);
+        $password = AES256_Decrypt_CBC($password);
         
         // compare decrypted db info with (anti dark art) post info
         if ($rawName === $username && $rawPass === $password) {
             // set clientName session variable and redirect to account page
             $_SESSION["username"] = $rawName;
-            echo "<pre>";
-            print_r($result);
-            echo "</pre>";
-            $userType = sql("SELECT user_type, username FROM users WHERE user_type = 'admin' AND username = :name", [
-                ":name" => AES256_Encrypt_CBC($username)
+            $userType = sql("SELECT user_type, password FROM users WHERE user_type = 'admin' AND password = :pass", [
+                ":pass" => AES256_Encrypt_CBC($password)
             ]);
-            if(isset($userType[0]["user_type"]) == "admin") {
+            if($userType[0]["user_type"] == "admin") {
                 header("Location: admin/admin.php");
-            }  else if(isset($userType[0]["user_type"]) == "") {
-                header("Location: ../stem/index.php");
+            } else if($userType[0]["user_type"] == null) {
+                header("Location: ../index.php");
             } else {
                 header("Location: index.php?msg=" . urlencode("Inloggning misslyckades. Försök igen."));
             }

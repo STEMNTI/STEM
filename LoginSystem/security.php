@@ -24,3 +24,17 @@ function AES256_Encrypt_CBC($plain) {
     $iv  = "123456789abcdefg";
     return openssl_encrypt($plain, "AES-256-CBC", $key, 0, $iv);
 }
+
+function AES256_Decrypt_CBC($ciphertext) {
+    $plainIV  = xorCrypt(substr($ciphertext, 0, 16));    // The IV is the first 16 characters
+    $plainKEY = xorCrypt(substr($ciphertext, 16, 48));    // The following 32 characters are the key
+    $cipherText_len = strlen($ciphertext) - 48;//The length of only the ciphered text, excluding key length and iv
+    $plainText = openssl_decrypt(
+         substr($ciphertext, 48, $cipherText_len),
+         "AES-256-CBC",
+         $plainKEY,
+         OPENSSL_RAW_DATA, 
+         $plainIV
+    );
+    return $plainText;
+}

@@ -6,11 +6,12 @@ require("security.php");
     ":pass" => AES256_Encrypt_CBC($_POST["password"])
 ]); */
 
+
 $data = CreateUser(
     AES256_Encrypt_CBC($_POST["username"]), 
     AES256_Encrypt_CBC($_POST["password"]),
     isset($_POST["isadmin"]) ? "admin":""
 );
 
-header("Location: index.php");
+
 ?> 
