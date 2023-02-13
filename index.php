@@ -86,8 +86,8 @@
             </tbody>
         </table>
         <div id="icons">
-        <a href="https://www.facebook.com/ntikristianstad/"><img src="Bilder/Facebook Stem.png" alt="Facebook Icon" id="Facebook"></a>
-        <a href="https://www.ntigymnasiet.se/kristianstad/"><img src="Bilder/Hemsida Stem.png" alt="Hemsida Icon" id="Hemsida"></a>
+        <a href="https://www.facebook.com/ntikristianstad/"><img src="Bilder/Facebook Stem.jpg" alt="Facebook Icon" id="Facebook"></a>
+        <a href="https://www.ntigymnasiet.se/kristianstad/"><img src="Bilder/Hemsida Stem.jpg" alt="Hemsida Icon" id="Hemsida"></a>
         <a href="https://www.instagram.com/ntikristianstad/"><img src="Bilder/instagram stem.jpg" alt="Instagram Icon" id="Instagram"></a>
         </div>  
         <p id="copyright">Stem Klubben © 2022</p>

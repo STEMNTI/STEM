@@ -27,6 +27,8 @@ To-do v.7: fixa så att man kan registera sig som admin, databas med Andre
 
 v.7
 Back-END
+vi är helt klar med logingsystem,registeringssymstem och bildupplägg
+in progress: admin,databas
 
 
 
