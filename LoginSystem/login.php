@@ -1,7 +1,7 @@
 <?php
 require("sql.php"); // hämtar sql.php
 require("security.php");
-
+session_start();
 if (isset($_POST["username"])) { //kollar om username har skickats
     // remove dark art from the post data to prevent (dark art) sql injection
     $username = htmlspecialchars($_POST["username"]);
@@ -31,8 +31,8 @@ if (isset($_POST["username"])) { //kollar om username har skickats
             ]);
             if(isset($userType[0]["user_type"]) == "admin") {
                 header("Location: admin/admin.php");
-            }  else if(isset($userType[0]["user_type"]) == null) {
-                header("Location: homepage.php");
+            }  else if(isset($userType[0]["user_type"]) == "") {
+                header("Location: ../stem/index.php");
             } else {
                 header("Location: index.php?msg=" . urlencode("Inloggning misslyckades. Försök igen."));
             }
