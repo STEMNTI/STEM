@@ -17,7 +17,7 @@ if(empty($_POST["filtervalue"])) {
 
 //PRINTS OUT ALL POSTS SELECTED
 foreach($posts as $post) {
-    echo "<div><h2>".$post["user"]."</h2><p>".$post["posttxt"]."</p><h4>".$post["time"]."</h4><br><br></div>";
+    echo "<div>".$post["tpost"]."<br>".$post["post"]."<br>".$post["name"]."<br>".$post["time"]."<br><img src='/STEM/PostSystem/Images/" . $post["Image"] . "' alt=''></div>";
 }
 ?>   
 
