@@ -10,12 +10,12 @@ $_SESSION["USERNAME"] = "test";
 //Detta systemet skapar ett inläg.
 //Det är väldigt likt regestreringssystemet en skilnad är att här tar du namnet på användaren som är inlogad och läger in det i databasen.
 
-        $query = sql("INSERT INTO posts (name, time, tpost, post, Image) VALUES (:name, current_timestamp(), :tpost, :post, :img);", [
+        $query = sql("INSERT INTO posts (name, time, tpost, post, Image) VALUES (:user, current_timestamp(), :tpost, :post, :image);", [
             
             ":user" => $_SESSION["USERNAME"],
             ":post" => $_POST["post"],
             ":tpost" => $_POST["tpost"],
-            ":img" => $_POST["image"]
+            ":image" => $_POST["image"]
         ]);
 
 
