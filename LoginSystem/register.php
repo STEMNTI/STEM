@@ -7,11 +7,22 @@ require("security.php");
 ]); */
 
 
-$data = CreateUser(
-    AES256_Encrypt_CBC($_POST["username"]), 
-    AES256_Encrypt_CBC($_POST["password"]),
-    isset($_POST["isadmin"]) ? "admin":""
-);
 
 
-?> 
+if(isset($_POST["username"])) {
+    $result = CreateUser(
+        AES256_Encrypt_CBC($_POST["username"]), 
+        AES256_Encrypt_CBC($_POST["password"]),
+        isset($_POST["isadmin"]) ? "admin":""
+        
+    );
+    $pdo = new PDO("mysql:host=localhost;dbname=STEM-login;", "root", "");
+    $prepared = $pdo->prepare("SELECT username FROM users");
+    if(AES256_Decrypt_CBC($result[0]["username"]) == $_POST["username"]) {
+        header("Location: register_form.php?=err" . urlencode("This username already exists, try again."));
+    } else {
+        $prepared->execute();
+        header("Location: ../index.php");
+    }
+}
+?>
