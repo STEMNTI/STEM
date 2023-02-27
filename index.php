@@ -13,7 +13,7 @@
 <body>
 <header>
         <img src="Bilder/SnyggLogga.png" alt="Snygglogga" id="logga">
-        <h2>STEM-NTI</h>
+        <h1 id="rubrik">STEM-NTI</h>
 </header>
 <div class="navigation">
             <button class="hamburger" onclick="show()">
