@@ -29,6 +29,7 @@ if (isset($_POST["username"])) { //kollar om username har skickats
                 ":pass" => AES256_Encrypt_CBC($password)
             ]);
             if($userType[0]["user_type"] == "admin") {
+                $_SESSION["usertype"] = "admin";
                 header("Location: admin/admin.php");
             } else if($userType[0]["user_type"] == null) {
                 header("Location: ../index.php");
