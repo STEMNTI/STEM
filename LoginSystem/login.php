@@ -1,6 +1,7 @@
 <?php
 require("sql.php"); // hämtar sql.php
 require("security.php");
+session_name("login123");
 session_start();
 if (isset($_POST["username"])) { //kollar om username har skickats
     // Convert any special characters present in the POST data 
@@ -18,8 +19,9 @@ if (isset($_POST["username"])) { //kollar om username har skickats
         // decrypt the encrypted username and password that we got from the database values from database
         $rawName = AES256_Decrypt_CBC($result[0]["username"]);
         $rawPass = AES256_Decrypt_CBC($result[0]["password"]);
-        $username = AES256_Decrypt_CBC($username);
-        $password = AES256_Decrypt_CBC($password);
+       /*  $username = AES256_Decrypt_CBC($username);
+        $password = AES256_Decrypt_CBC($password); */
+        
         
         // compare decrypted db info with (anti dark art) post info
         if ($rawName === $username && $rawPass === $password) {
@@ -28,10 +30,12 @@ if (isset($_POST["username"])) { //kollar om username har skickats
             $userType = sql("SELECT user_type, password FROM users WHERE user_type = 'admin' AND password = :pass", [
                 ":pass" => AES256_Encrypt_CBC($password)
             ]);
+        
             if($userType[0]["user_type"] == "admin") {
                 $_SESSION["usertype"] = "admin";
                 header("Location: admin/admin.php");
             } else if($userType[0]["user_type"] == null) {
+                $_SESSION["usertype"] = "";
                 header("Location: ../index.php");
             } else {
                 header("Location: index.php?msg=" . urlencode("Inloggning misslyckades. Försök igen."));
