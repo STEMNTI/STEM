@@ -36,9 +36,9 @@ if (isset($_POST["username"])) { //kollar om username har skickats
                 header("Location: admin/admin.php");
             } else if($userType[0]["user_type"] == null) {
                 $_SESSION["usertype"] = "";
-                header("Location: ../index.php");
+                header("Location: ./../index.php");
             } else {
-                header("Location: index.php?msg=" . urlencode("Inloggning misslyckades. Försök igen."));
+                header("Location: ./../login.php?msg=" . urlencode("Inloggning misslyckades. Försök igen."));
             }
         }
     }

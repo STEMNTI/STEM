@@ -17,5 +17,9 @@ if(!isset($_SESSION["usertype"]) || $_SESSION["usertype"] !== "admin"){
 </head>
 <body>
     <a href="create_user.php">To create new user.</a>
+    <br><br>
+    <a href="../logout.php">Logout here!</a>
+    <br><br>
+    <a href="../../index.php">index page</a>
 </body>
 </html>
