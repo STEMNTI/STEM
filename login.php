@@ -22,6 +22,5 @@
             <input type="submit" name="submit" value="Logga in" class="knappar">
         </form>        
     </div>
-
 </body>
 </html>
