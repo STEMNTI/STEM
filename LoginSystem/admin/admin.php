@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php 
+session_name("login123");
+session_start();
+// prevent non admin users from visiting this page
+if(!isset($_SESSION["usertype"]) || $_SESSION["usertype"] !== "admin"){
+  header("Location: ../../ooopspage.html");
+  exit();
+}
+?>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

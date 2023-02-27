@@ -24,3 +24,9 @@ function AES256_Encrypt_CBC($plain) {
     $iv  = "123456789abcdefg";
     return openssl_encrypt($plain, "AES-256-CBC", $key, 0, $iv);
 }
+
+function AES256_Decrypt_CBC($ciphertext) {
+    $key = "0000000000000000";
+    $iv  = "123456789abcdefg";
+    return openssl_decrypt($ciphertext, "AES-256-CBC", $key, 0, $iv);
+}
