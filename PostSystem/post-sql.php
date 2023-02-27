@@ -8,15 +8,15 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Ändrar en att
 function sql($sql, $valslista = []) {
     global $pdo;
     try {
-        $querry = $pdo->prepare($sql);
+        $query = $pdo->prepare($sql);
         foreach($valslista as $k => $v) { // Lopar igenom all k keys och all v values i arayn vals
-            $querry->bindParam($k, $valslista[$k]);
+            $query->bindParam($k, $valslista[$k]);
         }
-        $querry->execute(); //Kör koden
-        return $querry->fetchAll(PDO::FETCH_ASSOC); //Hämtar koden
-    } catch (Exception $err) {
+        $query->execute(); //Kör koden
+        return $query->fetchAll(PDO::FETCH_ASSOC); //Hämtar koden
+    } catch (PDOException $err) {
         print_r($err);
     }
     
 }
-?>
+?>          
