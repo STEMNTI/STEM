@@ -1,19 +1,18 @@
 * {box-sizing:border-box}
 .slideshow-container img{
-    /* overflow: none;
-    max-width: 30vw;
-    min-height: 0vh;
+  position: absolute;
+     overflow: none;
+    max-width: 35vw;
     position: flex;
     margin: auto;
-    object-fit: cover; */
-    height: 52%;
-    width: 3%;
-    position: fixed;
-    vertical-align: middle;
-    border-style: none;
+    vertical-align: center; 
+    height: 25vw;
+    left: 50vw;
+    right: 50vw;
+    transform: translate(-50%, 0);
 }
 .mySlides {
-  display: none;
+  opacity: 0;
 }
 
 .prev, .next {
