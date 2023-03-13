@@ -1,7 +1,7 @@
 <?php
 require("sql.php"); // hämtar sql.php
 require("security.php");
-session_name("login123");
+session_name("STEM");
 session_start();
 if (isset($_POST["username"])) { //kollar om username har skickats
     // Convert any special characters present in the POST data 

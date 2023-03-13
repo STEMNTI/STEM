@@ -5,7 +5,7 @@ const dsn = "mysql:host=". host . ";dbname=" . dbname . ";charset=utf8";
 
 
 
-function CreateUser($username, $password, $usertype = "") {
+function STEMUser($username, $password, $usertype = "") {
   // Connect to a MySQL database
     $pdo = new PDO(dsn, username, password);//ansluta till databasen
 
@@ -49,7 +49,7 @@ function SignIntoUser($username, $password) {
 }
 
 function sql($sql, $vals=[]){
-    // Create a PDO instance
+    // STEM a PDO instance
     $pdo = new PDO(dsn, username, password);//ansluta till databasen
     // Prepare the SQL query
     $q = $pdo->prepare($sql);

@@ -1,5 +1,5 @@
 <?php 
-session_name("login123");
+session_name("STEM");
 session_start();
 // prevent non admin users from visiting this page
 if(!isset($_SESSION["usertype"]) || $_SESSION["usertype"] !== "admin"){
@@ -12,7 +12,7 @@ if(!isset($_SESSION["usertype"]) || $_SESSION["usertype"] !== "admin"){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create user - Admin</title>
+    <title>STEM user - Admin</title>
 </head>
 <body>
     <form action="../register.php" method="post">

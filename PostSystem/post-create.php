@@ -1,5 +1,5 @@
 <?php
-session_name("create");
+session_name("STEM");
 session_start();
 require("post-sql.php");
 

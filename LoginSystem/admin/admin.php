@@ -1,5 +1,5 @@
 <?php 
-session_name("login123"); 
+session_name("STEM"); 
 session_start();
 // prevent non admin users from visiting this page
 if(!isset($_SESSION["usertype"]) || $_SESSION["usertype"] !== "admin"){ // checks if "usertype" isnt set or is set to admin
@@ -16,7 +16,7 @@ if(!isset($_SESSION["usertype"]) || $_SESSION["usertype"] !== "admin"){ // check
     <title>Home - Admin</title>
 </head>
 <body>
-    <a href="create_user.php">To create new user.</a>
+    <a href="STEM_user.php">To STEM new user.</a>
     <br><br>
     <a href="../logout.php">Logout here!</a>
     <br><br>
