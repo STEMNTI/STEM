@@ -1,7 +1,12 @@
 <?php
+require("../../config.php");
+
+$dsn = "mysql:host=". host . ";dbname=" . dbname . ";charset=utf8";
+
+
 function CreateUser($username, $password, $usertype = "") {
   // Connect to a MySQL database
-    $pdo = new PDO("mysql:host=localhost;dbname=STEM-login;", "root", "");//ansluta till databasen
+    $pdo = new PDO($dsn, username, password));//ansluta till databasen
 
   // Sanitize inputs to prevent SQL injection
   $user = htmlspecialchars($username);
@@ -22,7 +27,7 @@ function CreateUser($username, $password, $usertype = "") {
 }
 function SignIntoUser($username, $password) {
   // Connect to a MySQL database
-    $pdo = new PDO("mysql:host=localhost;dbname=STEM-login;", "root", "");//ansluta till databasen
+    $pdo = new PDO($dsn, username, password);//ansluta till databasen
 
   // Sanitize inputs to prevent SQL injection
   $user = htmlspecialchars($username);
@@ -42,7 +47,7 @@ function SignIntoUser($username, $password) {
 
 function sql($sql, $vals=[]){
     // Create a PDO instance
-    $pdo = new PDO("mysql:host=localhost;dbname=STEM-login;", "root", "");//ansluta till databasen
+    $pdo = new PDO($dsn, username, password);//ansluta till databasen
     // Prepare the SQL query
     $q = $pdo->prepare($sql);
     
