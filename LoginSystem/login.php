@@ -17,8 +17,8 @@ if (isset($_POST["username"])) { //kollar om username har skickats
     // if a matching row was found in users table (encrypted)
     if (isset($result[0]["username"]) && isset($result[0]["password"])) {
         // decrypt the encrypted username and password that we got from the database values from database
-        $rawName = AES256_Decrypt_CBC($result[0]["username"]);
-        $rawPass = AES256_Decrypt_CBC($result[0]["password"]);
+        $rawName = AES256_Decrypt_CBC($result[0]["username"]); // decrypts the username in the database for the raw name
+        $rawPass = AES256_Decrypt_CBC($result[0]["password"]); // decrypts the password in the database for the raw password
        /*  $username = AES256_Decrypt_CBC($username);
         $password = AES256_Decrypt_CBC($password); */
         
@@ -29,16 +29,16 @@ if (isset($_POST["username"])) { //kollar om username har skickats
             $_SESSION["username"] = $rawName;
             $userType = sql("SELECT user_type, password FROM users WHERE user_type = 'admin' AND password = :pass", [
                 ":pass" => AES256_Encrypt_CBC($password)
-            ]);
+            ]); // fetches the information from the database to check the usertype in the following code.
         
-            if($userType[0]["user_type"] == "admin") {
-                $_SESSION["usertype"] = "admin";
-                header("Location: admin/admin.php");
-            } else if($userType[0]["user_type"] == null) {
-                $_SESSION["usertype"] = "";
-                header("Location: ./../index.php");
+            if($userType[0]["user_type"] == "admin") { // checks if user is equal to admin
+                $_SESSION["usertype"] = "admin"; // assigns session[usertype] to admin
+                header("Location: admin/admin.php"); // forwards user to admin page
+            } else if($userType[0]["user_type"] == null) { // checks if user isnt admin
+                $_SESSION["usertype"] = ""; // assigns session[usertype] to empty (regular user)
+                header("Location: ./../index.php"); // forwards user to index page
             } else {
-                header("Location: ./../login.php?msg=" . urlencode("Inloggning misslyckades. Försök igen."));
+                header("Location: ./../login.php?msg=" . urlencode("Inloggning misslyckades. Försök igen.")); // forwards user to login page with error message if failure of login
             }
         }
     }
