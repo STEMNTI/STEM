@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om oss</title>
     <link rel="icon" href="icon.png">       <!-- Ändra ikon på fliken -->   
-
+   
     <style>
         h1{
             padding-left: 80px;
             padding-top: 20px
+            
         }
         div.klassfoto img {
             width: 100%;
@@ -27,15 +28,22 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
+        body {
+            background-color: #0b3252;
+        }
+       
+
+
     </style>
 
 </head>
 
 <body>
-
-    <h1>
-        Om oss
-    </h1>
+    <header>
+        
+    </header>
+<h1>Om oss </h1>
+    
 
     <br>
 
@@ -44,7 +52,6 @@
     </div>
 
     <footer>
-        
-    </footer>
+       
 </body>
 </html>
