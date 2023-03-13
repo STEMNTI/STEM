@@ -79,7 +79,7 @@ session_start();
                 </tr>
                 <tr>
                     <td><a id="links" href="fysik.php">Fysik</a></td>
-                    <td>Om oss</td>
+                    <td><a id="links" href="Omoss.php">Om oss</a></td>
                     <td>Om du vill gå en populär gymnasieutbildning inom tech och IT</td>
                 </tr>
                 <tr>
