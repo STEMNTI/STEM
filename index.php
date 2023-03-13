@@ -20,7 +20,7 @@ session_start();
 </head>
 <body>
 <header>
-        <img src="Bilder/SnyggLogga.png" alt="Snygglogga" id="logga">
+        <img src="image2.png" alt="Snygglogga" id="logga">
         <h1 id="rubrik">STEM-NTI</h>
 </header>
 <div class="navigation">
