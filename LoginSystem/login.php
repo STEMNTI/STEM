@@ -8,16 +8,15 @@ if (isset($_POST["username"])) { //kollar om username har skickats
     $username = htmlspecialchars($_POST["username"]);
     $password = htmlspecialchars($_POST["password"]);
     // select the encrypted name and pass from the users table where name and pass match encrypted post values  
-    $result = SignIntoUser(AES256_Encrypt_CBC($username), AES256_Encrypt_CBC($password));
+    $result = SignIntoUser($username, AES256_Encrypt_CBC($password));
     // if a matching row was found in users table (encrypted)
     if(isset($result[0]["username"]) && isset($result[0]["password"])) {
         // decrypt the encrypted username and password that we got from the database values from database
-        $rawName = AES256_Decrypt_CBC($result[0]["username"]); // decrypts the username in the database for the raw name
         $rawPass = AES256_Decrypt_CBC($result[0]["password"]); // decrypts the password in the database for the raw password 
         // compare decrypted db info with (anti dark art) post info
-        if ($rawName === $username && $rawPass === $password) {
+        if ($rawPass === $password) {
             // set username session variable and redirect to account page
-            $_SESSION["username"] = $rawName;
+            $_SESSION["username"] = $username;
             $userType = sql("SELECT user_type, password FROM users WHERE user_type = 'admin' AND password = :pass", [
                 ":pass" => AES256_Encrypt_CBC($password)
             ]); // fetches the information from the database to check the usertype in the following code.

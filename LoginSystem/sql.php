@@ -4,7 +4,6 @@ require "../config.php";
 const dsn = "mysql:host=". host . ";dbname=" . dbname . ";charset=utf8";
 
 
-
 function STEMUser($username, $password, $usertype = "") {
   // Connect to a MySQL database
     $pdo = new PDO(dsn, username, password);//ansluta till databasen

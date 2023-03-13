@@ -23,6 +23,11 @@
             </div>
             <input type="submit" name="submit" value="Register" class="knappar">
             <a href="login.php">Login</a>
+            <?php
+                if(isset($_GET["err"])) {
+                    echo $_GET["err"];
+                }
+            ?>
         </form>        
     </div>
 </body>
