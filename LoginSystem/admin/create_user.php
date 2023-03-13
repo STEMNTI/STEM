@@ -19,7 +19,7 @@ session_start();
         <input type="text" name="username" placeholder="username"><br><br>
         <input type="password" name="password" placeholder="password"><br><br>
         <label for="isadmin">Set To Admin</label>
-        <input type="radio" name="isadmin" placeholder="admin"><br><br>
+        <input type="checkbox" name="isadmin" placeholder="admin"><br><br>
         <input type="submit" value="Submit">
     </form>
 </body>

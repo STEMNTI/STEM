@@ -22,7 +22,7 @@ if(isset($_POST["username"])) {
         header("Location: register_form.php?=err" . urlencode("This username already exists, try again."));
     } else {
         $prepared->execute();
-        header("Location: ../index.php");
+        header("Location: ../login.php");
     }
 }
 ?>
