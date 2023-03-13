@@ -1,6 +1,6 @@
 <?php
 const host     = "localhost"; // HOSTNAME
-const dbname   = "teststem";  // Database Name
+const dbname   = "stem-login";  // Database Name
 const username = "root";      // Username
 const password = "";          // Password
 

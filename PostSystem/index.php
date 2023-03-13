@@ -1,5 +1,5 @@
 <?php
-session_name("create"); 
+session_name("STEM"); 
 session_start(); 
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ session_start();
 </head>
 <body>
 <div>
-    <form action="post-create.php" method="post" enctype="multipart/form-data"> 
+    <form action="post-STEM.php" method="post" enctype="multipart/form-data"> 
         <input type="text" name="tpost" id="tpost" placeholder="Titel"><br>
         <textarea type="text" name="post" id="post" placeholder="Skriv inlägg"></textarea><br>
         <input type="file" name= "image" id= "image" placeholder= "Upload image"></input><br>    

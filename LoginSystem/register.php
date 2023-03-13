@@ -1,7 +1,7 @@
 <?php
 require("sql.php"); //länkar med sql.php//
 require("security.php");
-/* $data = CreateUser("INSERT INTO users (user, pass) VALUES(:user, :pass);", [
+/* $data = STEMUser("INSERT INTO users (user, pass) VALUES(:user, :pass);", [
     ":user" => AES256_Encrypt_CBC($_POST["email"]),
     ":pass" => AES256_Encrypt_CBC($_POST["password"])
 ]); */
@@ -10,7 +10,7 @@ require("security.php");
 
 
 if(isset($_POST["username"])) {
-    $result = CreateUser(
+    $result = STEMUser(
         AES256_Encrypt_CBC($_POST["username"]), 
         AES256_Encrypt_CBC($_POST["password"]),
         isset($_POST["isadmin"]) ? "admin":""
@@ -22,7 +22,7 @@ if(isset($_POST["username"])) {
         header("Location: register_form.php?=err" . urlencode("This username already exists, try again."));
     } else {
         $prepared->execute();
-        header("Location: ../index.php");
+        header("Location: ../login.php");
     }
 }
 ?>

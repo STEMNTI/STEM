@@ -1,5 +1,5 @@
 <?php 
-session_name("login123");
+session_name("STEM");
 session_start();
 // prevent non admin users from visiting this page
 /* if(!isset($_SESSION["usertype"]) || $_SESSION["usertype"] !== "admin"){
@@ -14,13 +14,14 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StemKlubben</title>
+    <link rel="icon" type="image/x-icon" href="Bilder/logo.png">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="hamburger.css">
     <link rel="stylesheet" href="slideshow.css">
 </head>
 <body>
 <header>
-        <img src="Bilder/SnyggLogga.png" alt="Snygglogga" id="logga">
+        <img src="Bilder/logo.png" alt="Snygglogga" id="logga">
         <h1 id="rubrik">STEM-NTI</h>
 </header>
 <div class="navigation">
@@ -43,17 +44,17 @@ session_start();
         <article>           
         <div class="slideshow-container">
             <div class="mySlides fade">
-            <img src="https://img.koket.se/standard-mega/kebab-i-pitabrod-med-tva-saser-inlagd-chili-och-krispig-sallad.jpg" style="width:100%">
+                <img src="https://img.koket.se/standard-mega/kebab-i-pitabrod-med-tva-saser-inlagd-chili-och-krispig-sallad.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-            <img src="https://receptfavoriter.se/sites/default/files/styles/recipe_4x3/public/hemgjort_kebabkott_pa_fat_1060.jpg" style="width:100%">
+                <img src="https://receptfavoriter.se/sites/default/files/styles/recipe_4x3/public/hemgjort_kebabkott_pa_fat_1060.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-            <img src="https://www.bellybalance.se/wp-content/uploads/2017/05/Vegetarisk-Shish-kebab-med-quinoasallad.jpg" style="width:100%">
+                <img src="https://www.bellybalance.se/wp-content/uploads/2017/05/Vegetarisk-Shish-kebab-med-quinoasallad.jpg" style="width:100%">
             </div>
-            </div>
+        </div>
             <br>
-            <div style="text-align:center">
+        <div style="text-align:center">
             <span class="dot"></span> 
             <span class="dot"></span> 
             <span class="dot"></span> 

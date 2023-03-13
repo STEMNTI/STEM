@@ -1,11 +1,12 @@
 <?php
-session_name("create");
+session_name("STEM");
 session_start();
 require("post-sql.php");
 
 // TEMP
 $_SESSION["USERNAME"] = "test";
 
+print_r($_POST);
 
 //Detta systemet skapar ett inläg.
 //Det är väldigt likt regestreringssystemet en skilnad är att här tar du namnet på användaren som är inlogad och läger in det i databasen.
@@ -15,7 +16,7 @@ $_SESSION["USERNAME"] = "test";
             ":user" => $_SESSION["USERNAME"],
             ":post" => $_POST["post"],
             ":tpost" => $_POST["tpost"],
-            ":image" => $_POST["image"]
+            ":image" => $_FILES['image']['name']
         ]);
 
 
@@ -56,7 +57,7 @@ if(isset($_FILES['image'])){
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-print_r($_FILES);
-//header("Location: post-post.php")
+
+header("Location: post-post.php")
 ?>
 
