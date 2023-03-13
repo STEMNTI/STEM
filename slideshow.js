@@ -2,10 +2,9 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.opacity = "0";  
   }
   slideIndex++;
