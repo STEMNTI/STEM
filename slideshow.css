@@ -2,7 +2,7 @@
 .slideshow-container img{
   position: absolute;
      overflow: none;
-    max-width: 35vw;
+    max-width: 100%;
     position: flex;
     margin: auto;
     vertical-align: center; 

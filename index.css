@@ -57,3 +57,7 @@ header{
 article{
     height: 25vw;
 }
+
+.slideshow-container {
+    width: 100%;
+}
