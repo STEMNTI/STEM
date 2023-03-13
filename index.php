@@ -31,9 +31,11 @@ session_start();
             </button>
         <nav>
             <ul>
-                <li><a href="" id="ham">random link 1</a></li>
-                <li><a href="" id="ham">random link 2</a></li>
-                <li><a href="" id="ham">random link 3</a></li>
+                <li><a href="" id="ham">Matte</a></li>
+                <li><a href="" id="ham">Fysik</a></li>
+                <li><a href="" id="ham">Robotik</a></li>
+                <li><a href="" id="ham">Teknik</a></li>
+                <li><a href="" id="ham">Programmering</a></li>
             </ul>
         </nav>
         </div>
