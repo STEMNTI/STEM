@@ -9,23 +9,18 @@
 </head>
 <body class="login-body">
     <div class="login">
-        <form action="">
+        <form action="./loginSystem/login.php" method="post">
             <h1>Logga In</h1>
             <div class = "email">
-                <lable>E-mail</lable>
-                <input type="text" name="email" placeholder="exempel@gmail.com" class="input">
+                <lable>Username</lable>
+                <input type="text" name="username" placeholder="Användarnamn" class="input">
             </div>
             <div class = "password">
                 <lable>Password</lable>
                 <input type="password" name="password" placeholder="Ditt lösenord" class="input">
             </div>
-                <input type="submit" value="Logga in" class="knappar">
-            <form action="">
-                <input type="submit" value="Registrera dig" class ="knappar">
-            </form>
-        </form>
-        
+            <input type="submit" name="submit" value="Logga in" class="knappar">
+        </form>        
     </div>
-
 </body>
 </html>

@@ -14,17 +14,19 @@ function CreateUser($username, $password, $usertype = "") {
   $userType = $usertype;
 
   // Prepare SQL statement
-  $prepared = $pdo->prepare("INSERT INTO users (username, password, user_type) VALUES (:name, :pass, :user_type)");
-
-  // Bind values to parameters in statement
-  $prepared->bindValue(":name", $user, PDO::PARAM_STR);
-  $prepared->bindValue(":pass", $pass, PDO::PARAM_STR);
-  $prepared->bindValue(":user_type", $userType, PDO::PARAM_STR);
-
-  // Execute statement
-  $prepared->execute();
-  return $prepared->fetchAll(PDO::FETCH_ASSOC);
-}
+  
+    $prepared = $pdo->prepare("INSERT INTO users (username, password, user_type) VALUES (:name, :pass, :user_type)");
+    
+    // Bind values to parameters in statement
+    $prepared->bindValue(":name", $user, PDO::PARAM_STR);
+    $prepared->bindValue(":pass", $pass, PDO::PARAM_STR);
+    $prepared->bindValue(":user_type", $userType, PDO::PARAM_STR);
+    
+    // Execute statement
+    $prepared->execute();
+    return $prepared->fetchAll(PDO::FETCH_ASSOC);
+    
+  }
 function SignIntoUser($username, $password) {
   // Connect to a MySQL database
     $pdo = new PDO($dsn, username, password);//ansluta till databasen
