@@ -22,7 +22,7 @@
             <input type="submit" name="submit" value="Logga in" class="knappar">
             <a href="register.php">Register</a>
             <?php
-                
+                echo $_GET["msg"];
             ?>
         </form>        
     </div>
