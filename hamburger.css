@@ -15,7 +15,7 @@ nav{
 }
 
 .navigation{
-  position: fixed;
+  position: absolute;
   right: -500px;
   width: 350px;
   height: 100%;
