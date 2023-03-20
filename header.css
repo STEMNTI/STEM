@@ -1,19 +1,22 @@
 #header {
-    padding-bottom: 1%;     
-    font-size: 2vw; 
+    padding-bottom: 1vw;     
+    font-size: 2vh; 
 }
 #rubrik {
     margin-bottom:0%;
 }
 #logga {
-    float:left;
-    width: 5%;
+    top: 1vh;
+    position:fixed;
+    left:1vw;
+    width: 5vw;
+    height: 5vw;
 }
 header{
     background-color: #0b3252;
     text-align: center;
     color: #fff;
-    padding: 1.5vw;
+    padding: 2vw;
 }
 
 header a{
