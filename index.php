@@ -22,6 +22,7 @@ require("header.php");
                 <li><a href="robotik.php" id="ham">Robotik</a></li>
                 <li><a href="teknik.php" id="ham">Teknik</a></li>
                 <li><a href="prog.php" id="ham">Programmering</a></li>
+                <li><a href="" id="ham">Om oss</a></li>
             </ul>
         </nav>
         </div>
