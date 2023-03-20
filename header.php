@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,6 @@
 </head>
 <body>
 <header>
-        <img src="Bilder/logo.png" alt="Snygglogga" id="logga">
+        <a href="index.php"><img src="Bilder/logo.png" alt="Snygglogga" id="logga"></a>
         <h1 id="rubrik">STEM-NTI</h>
 </header>
