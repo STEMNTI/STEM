@@ -18,6 +18,8 @@ session_start();
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="hamburger.css">
     <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
 <header>
