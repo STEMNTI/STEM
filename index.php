@@ -9,22 +9,6 @@ session_start();
 require("header.php");
 ?>
 
-<div class="navigation">
-            <button class="hamburger" onclick="show()">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-            </button>
-        <nav>
-            <ul>
-                <li><a href="" id="ham">Matte</a></li>
-                <li><a href="" id="ham">Fysik</a></li>
-                <li><a href="" id="ham">Robotik</a></li>
-                <li><a href="" id="ham">Teknik</a></li>
-                <li><a href="" id="ham">Programmering</a></li>
-            </ul>
-        </nav>
-        </div>
     <section>
         <article>           
         <div class="slideshow-container">

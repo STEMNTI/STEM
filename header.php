@@ -17,3 +17,19 @@
         <img src="Bilder/logo.png" alt="Snygglogga" id="logga">
         <h1 id="rubrik">STEM-NTI</h>
 </header>
+<div class="navigation">
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+        <nav>
+            <ul>
+                <li><a href="matte.php" id="ham">Matte</a></li>
+                <li><a href="fysik.php" id="ham">Fysik</a></li>
+                <li><a href="robotik.php" id="ham">Robotik</a></li>
+                <li><a href="teknik.php" id="ham">Teknik</a></li>
+                <li><a href="prog.php" id="ham">Programmering</a></li>
+            </ul>
+        </nav>
+</div>
