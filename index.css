@@ -45,16 +45,23 @@ th {
 body{
     font-family: Verdana, sans-serif;
     overflow-x: hidden;
+    margin:0%;
 }
 article{
     height: 25vw;
 }
 
 .slideshow-container {
+    margin:0%;
+    width: 100%;
+}
+
+.slideshow-container div img{
     width: 100%;
 }
 
 section{
+    margin:0%;
     height:70vh;
     text-align: center;
 }
