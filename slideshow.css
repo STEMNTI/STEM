@@ -5,13 +5,15 @@
 }
 
 .slideshow-container img{
-  position: absolute;
+  position:absolute;
+  right:0;
      overflow: hidden;
     max-width: 100%;
     position: flex;
     margin: auto;
     vertical-align: center; 
-    transform: translate(-50%, 0);
+    /*opacity: 0;*/
+    height:60vh;
 }
 .mySlides {
   opacity: 0;

@@ -7,8 +7,8 @@
 }
 #logga {
     top: 1vh;
-    position:fixed;
-    left:1vw;
+    position:absolute;
+    left:1vh;
     width: 5vw;
     height: 5vw;
 }
