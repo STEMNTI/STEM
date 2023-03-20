@@ -16,3 +16,8 @@ header{
     color: #fff;
     padding: 1.5vw;
 }
+
+header a{
+    text-decoration: none;
+    color:#fff;
+}
