@@ -44,7 +44,7 @@ th {
 }
 body{
     font-family: Verdana, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 article{
     height: 25vw;
