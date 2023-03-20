@@ -7,7 +7,6 @@ require("header.php");
     <p>Här kommer det läggas upp artiklar inom ämnet Mattematik</p>
 </section>
 
-
 <?php
 require("footer.php");
 ?>

@@ -6,17 +6,17 @@
     margin-bottom:0%;
 }
 #logga {
-    top: 1vh;
+    top: 2vh;
     position:absolute;
     left:1vh;
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 3.7vw;
 }
 header{
     background-color: #0b3252;
     text-align: center;
     color: #fff;
-    padding: 2vw;
+    padding: 1.5vw;
 }
 
 header a{
