@@ -17,11 +17,11 @@ require("header.php");
             </button>
         <nav>
             <ul>
-                <li><a href="" id="ham">Matte</a></li>
-                <li><a href="" id="ham">Fysik</a></li>
-                <li><a href="" id="ham">Robotik</a></li>
-                <li><a href="" id="ham">Teknik</a></li>
-                <li><a href="" id="ham">Programmering</a></li>
+                <li><a href="matte.php" id="ham">Matte</a></li>
+                <li><a href="fysik.php" id="ham">Fysik</a></li>
+                <li><a href="robotik.php" id="ham">Robotik</a></li>
+                <li><a href="teknik.php" id="ham">Teknik</a></li>
+                <li><a href="prog.php" id="ham">Programmering</a></li>
             </ul>
         </nav>
         </div>
