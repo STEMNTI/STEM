@@ -1,0 +1,32 @@
+footer {
+    background-color: #0b3252;
+    min-height: 100vh;
+}
+table {
+    margin-left: 25%;
+    font-size: 85%;
+    width: 70%;
+    text-align: left;
+}
+td {
+    color: #D3D3D3;
+}
+#links {
+    text-decoration: none;
+    color: #D3D3D3;
+}
+th {
+    color: #fff;
+}
+#icons {
+    margin-left:46%;
+    margin-top:2%;
+}
+#Facebook, #Instagram, #Hemsida {
+    width:5%;
+}
+#copyright {
+    color:#808080;
+    text-align: center;
+    font-size: 85%;
+}
