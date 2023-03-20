@@ -53,3 +53,16 @@ article{
 .slideshow-container {
     width: 100%;
 }
+
+section{
+    height:70vh;
+    text-align: center;
+}
+
+section h1{
+    font-size:xx-large;
+}
+
+section p{
+    font-size: x-large;
+}

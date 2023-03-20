@@ -15,7 +15,7 @@
 <body>
 <header>
         <a href="index.php"><img src="Bilder/logo.png" alt="Snygglogga" id="logga"></a>
-        <h1 id="rubrik">STEM-NTI</h>
+        <a href="index.php"><h1 id="rubrik">STEM-NTI</h></a>
 </header>
 <div class="navigation">
             <button class="hamburger" onclick="show()">
