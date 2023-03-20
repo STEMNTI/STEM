@@ -1,0 +1,20 @@
+#omoss{
+    padding-left: 80px;
+    padding-top: 20px
+    
+}
+div.klassfoto img {
+    width: 100%;
+    height: auto;
+}
+div.klassfoto:hover {
+    border: 2px ridge #777;
+    border-radius: 3px;
+    padding: 0.5px;
+    padding-top: 1px;
+}
+div.desc {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

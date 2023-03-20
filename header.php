@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="slideshow.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="omoss.css">
 </head>
 <body>
 <header>
@@ -30,6 +31,7 @@
                 <li><a href="robotik.php" id="ham">Robotik</a></li>
                 <li><a href="teknik.php" id="ham">Teknik</a></li>
                 <li><a href="prog.php" id="ham">Programmering</a></li>
+                <li><a href="omoss.php" id="ham">Om oss</a></li>
             </ul>
         </nav>
 </div>
