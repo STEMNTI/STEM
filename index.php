@@ -28,7 +28,7 @@ require("header.php");
             <span class="dot"></span> 
             <span class="dot"></span> 
         </div>
-        </article>
+        </article>x
     </section>
 
 
