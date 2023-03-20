@@ -7,5 +7,5 @@ require("header.php");
 <div class="desc">Namn?</div>       <!-- Bildbeskrivning -->
 </div>
 <?php
-require("header.php");
+require("footer.php");
 ?>
