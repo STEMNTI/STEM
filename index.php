@@ -29,13 +29,13 @@ require("header.php");
         <article>           
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="https://img.koket.se/standard-mega/kebab-i-pitabrod-med-tva-saser-inlagd-chili-och-krispig-sallad.jpg" style="width:100%">
+                <img src="https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847__480.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="https://receptfavoriter.se/sites/default/files/styles/recipe_4x3/public/hemgjort_kebabkott_pa_fat_1060.jpg" style="width:100%">
+                <img src="https://cdn.pixabay.com/photo/2014/09/20/13/52/board-453758__480.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="https://www.bellybalance.se/wp-content/uploads/2017/05/Vegetarisk-Shish-kebab-med-quinoasallad.jpg" style="width:100%">
+                <img src="https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562__480.jpg" style="width:100%">
             </div>
         </div>
             <br>
