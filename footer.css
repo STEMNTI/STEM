@@ -1,6 +1,7 @@
 footer {
     background-color: #0b3252;
-    min-height: 100vh;
+    padding-top:1.5%;
+    padding-bottom: 1.5%;
 }
 table {
     margin-left: 25%;
