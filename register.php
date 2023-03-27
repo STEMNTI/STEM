@@ -25,6 +25,7 @@
             <a href="login.php">Login</a>
             <?php
                 if(isset($_GET["err"])) {
+                    echo "<br>";
                     echo $_GET["err"];
                 }
             ?>

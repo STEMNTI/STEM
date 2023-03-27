@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
@@ -44,7 +51,7 @@ CREATE TABLE `posts` (
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `username` tinytext NOT NULL,
+  `username` varchar(256) NOT NULL,
   `password` text NOT NULL,
   `user_type` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -63,7 +70,8 @@ ALTER TABLE `posts`
 -- Index för tabell `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
 
 --
 -- AUTO_INCREMENT för dumpade tabeller

@@ -18,7 +18,7 @@ function STEMUser($username, $password, $usertype = "") {
     $prepared = $pdo->prepare("INSERT INTO users (username, password, user_type) VALUES (:name, :pass, :user_type)");
     
     // Bind values to parameters in statement
-    $prepared->bindValue(":name", $user, PDO::PARAM_STR);
+    $prepared->bindValue(":name", $user);
     $prepared->bindValue(":pass", $pass, PDO::PARAM_STR);
     $prepared->bindValue(":user_type", $userType, PDO::PARAM_STR);
     
