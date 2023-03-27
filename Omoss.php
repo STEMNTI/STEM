@@ -6,6 +6,7 @@ require("header.php");
 <div class="klassfoto"> <img src="Bilder/klassfototemplate.png" alt="Klassfoto">       <!-- Bild på klassen -->
 <div class="desc">Namn?</div>       <!-- Bildbeskrivning -->
 </div>
+<br>
 <?php
 require("footer.php");
 ?>
