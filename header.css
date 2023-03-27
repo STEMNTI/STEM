@@ -23,3 +23,7 @@ header a{
     text-decoration: none;
     color:#fff;
 }
+
+header button{
+    left:1%;
+}

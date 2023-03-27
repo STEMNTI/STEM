@@ -9,11 +9,11 @@ article{
 
 .slideshow-container {
     margin:0%;
-    width: 100%;
+    width: 100vw;
 }
 
 .slideshow-container div img{
-    width: 100%;
+    width: 100vw;
 }
 
 section{

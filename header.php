@@ -18,12 +18,12 @@
         <a href="index.php"><img src="Bilder/logo.png" alt="Snygglogga" id="logga"></a>
         <a href="index.php"><h1 id="rubrik">STEM-NTI</h></a>
 </header>
-<div class="navigation">
-            <button class="hamburger" onclick="show()">
+<button class="hamburger" onclick="show()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
                 <div id="bar3" class="bar"></div>
             </button>
+<div class="navigation">
         <nav>
             <ul>
                 <li><a href="matte.php" id="ham">Matte</a></li>
