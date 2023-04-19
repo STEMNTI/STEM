@@ -1,11 +1,7 @@
 <?php 
 session_name("STEM");
 session_start();
-// prevent non admin users from visiting this page
-/* if(!isset($_SESSION["usertype"]) || $_SESSION["usertype"] !== "admin"){
-  header("Location: ooopspage.html");
-  exit();
-} */
+
 require("header.php");
 ?>
 
